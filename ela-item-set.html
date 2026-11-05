@@ -122,7 +122,7 @@
     <p class="eyebrow">ELA Assessment Development Sample</p>
     <h1>Grade 5 Literary Item Set: <em>The Praline Pot</em></h1>
     <p class="lede">An original literary passage paired with eight standards-aligned items: selected response, an evidence-based two-part item, two technology-enhanced items, and a constructed response with a scoring rubric. Switch to <strong>Item Specifications</strong> to see keys, distractor rationales, metadata, and scoring guidance.</p>
-    <p class="byline">Passage and items written by Dr. Mary K Boudreaux, EdD &middot; <a href="./">Portfolio home</a> &middot; <a href="ela-item-set-grade10.html">Grade 10 informational set</a> &middot; <a href="ai-item-review.html">AI item-review case study</a></p>
+    <p class="byline">Passage and items written by Dr. Mary K Boudreaux, EdD &middot; <a href="./">Portfolio home</a> &middot; <a href="ela-item-set-grade5-informational.html">Grade 5 informational set (Set B)</a> &middot; <a href="ela-item-set-grade10.html">Grade 10 informational set</a> &middot; <a href="ai-item-review.html">AI item-review case study</a></p>
   </div>
 </header>
 
@@ -182,7 +182,7 @@
   <section class="notes" id="notes" aria-labelledby="ntitle">
     <h2 id="ntitle">Development Notes</h2>
     <ul>
-      <li><strong>Blueprint coverage.</strong> Key ideas and details (Items 2, 3, 4, 5, 8), craft and structure (Items 1, 6, 7), and vocabulary acquisition (Items 1, 7). Depth of Knowledge ranges from Level 1 to Level 3, with three items at Level 3.</li>
+      <li><strong>Blueprint coverage.</strong> Key ideas and details (Items 2, 3, 4, 5, 8), craft and structure (Item 6), and vocabulary acquisition (Items 1, 7). See the <a href="test-blueprint.html">test blueprint</a> for how this set fits a full form. Depth of Knowledge ranges from Level 1 to Level 3, with three items at Level 3.</li>
       <li><strong>Difficulty targets.</strong> Difficulty labels are author estimates prior to field testing, with target p-values of .70 to .85 (Easy), .50 to .70 (Medium), and .30 to .50 (Hard). Final classifications would be set from field-test statistics and distractor analysis.</li>
       <li><strong>Distractor design.</strong> Every distractor is plausible and tied to a specific misreading: a detail that appears in the text but does not answer the question, a partial understanding, or an overgeneralization. No "all of the above," no negative stems, and options are parallel in length and structure.</li>
       <li><strong>Bias and sensitivity review.</strong> The cultural setting is presented from the inside and without stereotype; family terms (<em>Mon-mon</em>, <em>Chère</em>, <em>Bébé</em>) are glossed with pronunciations, are understandable from context, and are not tested. Stovetop cooking happens with an adult present. No item requires background knowledge of candy making; every answer is supported by the passage.</li>
@@ -226,7 +226,7 @@ const ITEMS = [
    opts:["melted into a thin, runny syrup","formed into small, hard grains of sugar","burned on the bottom of the pot","hardened into a smooth, shiny candy"], key:1,
    why:["Describes an earlier stage of cooking (paragraph 13), the opposite of what happened to the first batch.","Correct. Mon-mon explains that the sugar “turned back into tiny grains,” and paragraph 9 says the candy felt like wet sand and crunched like sugar.","Plausible because Lise turned the flame up high, but the text never mentions burning; the problem is texture, not scorching.","Describes the successful second batch (paragraph 16), the reverse of what crystallized candy looks like."] },
 
- { id:"G5-LIT-PP-02", type:"mc", typeLabel:"Multiple Choice", std:"RL.5.3", stdText:"Compare and contrast two characters, drawing on specific details in the text.", dok:2, diff:"Medium", pts:1,
+ { id:"G5-LIT-PP-02", type:"mc", typeLabel:"Multiple Choice", std:"RL.5.3", stdText:"Compare and contrast two or more characters, drawing on specific details in the text (for example, how characters interact).", dok:2, diff:"Medium", pts:1,
    stem:"Which statement best describes how Mon-mon helps Lise make the pralines?",
    opts:["She takes over the cooking after the first batch fails.","She stays silent so that Lise can learn only from her own mistakes.","She guides Lise with advice and a water test but lets Lise do the work.","She reads the recipe aloud so that Lise can follow each step."], key:2,
    why:["Mon-mon keeps “my hands in my lap” (paragraph 5); Lise does all the cooking in both batches.","Attractive to students who notice Mon-mon lets Lise fail, but she speaks throughout (“Not yet,” “Too soon,” “Closer”).","Correct. Mon-mon gives directions and teaches the cold-water test (paragraphs 12 to 15) while Lise cooks.","No written recipe appears in the story; the knowledge Mon-mon shares comes from experience and testing."] },
@@ -247,7 +247,7 @@ const ITEMS = [
    start:[2,4,0,3,1],
    scoring:"1 point: all five events in the correct order. 0 points: any event out of order. Events were chosen to represent the beginning, turning point, and resolution, so a correct order reflects a summary of the plot rather than memory of minor details." },
 
- { id:"G5-LIT-PP-05", type:"hot", typeLabel:"Technology-Enhanced: Hot Text", std:"RL.5.3 / RL.5.1", stdText:"Describe how a character responds to challenges, using details from the text.", dok:2, diff:"Medium", pts:1,
+ { id:"G5-LIT-PP-05", type:"hot", typeLabel:"Technology-Enhanced: Hot Text", std:"RL.5.2 / RL.5.1", stdText:"Determine a theme from details in the text, including how characters respond to challenges; quote accurately from the text.", dok:2, diff:"Medium", pts:1,
    stem:"In paragraph 13, Lise makes the second batch differently. Select the <strong>two</strong> sentences that show what Lise does differently this time.",
    para:13,
    sents:["They started again.","This time Lise kept the flame low.","She stirred only until the sugar melted, and then she let the pot bubble on its own, even though waiting felt like holding her breath.","Every few minutes, Mon-mon told her to drip a little of the syrup into the cup of water."],
@@ -257,15 +257,15 @@ const ITEMS = [
 
  { id:"G5-LIT-PP-06", type:"mc", typeLabel:"Multiple Choice", std:"RL.5.5", stdText:"Explain how a series of scenes fits together to provide the overall structure of a story.", dok:3, diff:"Hard", pts:1,
    stem:"Why does the author include the scene of the first, failed batch of pralines (paragraphs 6 to 10)?",
-   opts:["to teach readers the steps for making pralines at home","to create a contrast that makes Lise’s later change and success clearer","to explain how Mon-mon hurt her wrist before the fair","to show that Lise does not care about the church fair"], key:1,
-   why:["Tempting because the story includes cooking details, but it is fiction; the details serve the plot, not instruction.","Correct. The rushed first batch sets up the patient second batch, so readers can see how Lise changes.","The story never explains how Mon-mon was hurt; the brace is already on in paragraph 1.","Contradicted by the text; Lise volunteers eagerly and works until Friday night."] },
+   opts:["to create a contrast that makes Lise’s later change and success clearer", "to teach readers the steps for making pralines at home", "to explain how Mon-mon hurt her wrist before the fair", "to show that Lise does not care about the church fair"], key:0,
+   why:["Correct. The rushed first batch sets up the patient second batch, so readers can see how Lise changes.", "Tempting because the story includes cooking details, but it is fiction; the details serve the plot, not instruction.", "The story never explains how Mon-mon was hurt; the brace is already on in paragraph 1.", "Contradicted by the text; Lise volunteers eagerly and works until Friday night."] },
 
  { id:"G5-LIT-PP-07", type:"mc", typeLabel:"Multiple Choice", std:"L.5.5a / RL.5.4", stdText:"Interpret figurative language, including similes, in context.", dok:2, diff:"Medium", pts:1,
    stem:"In paragraph 14, the author says the ball of syrup is “soft as a ripe fig.” What does this comparison help the reader understand?",
-   opts:["The candy has turned the color of fresh fruit.","The syrup is soft but firm enough to hold its shape.","Mon-mon likes to add figs to her pralines.","The candy is finished and ready to be wrapped."], key:1,
-   why:["Focuses on color, but the comparison describes how the ball feels when Lise squeezes it.","Correct. A ripe fig gives when pressed but keeps its shape, like the syrup at the right stage.","A literal reading of the simile; figs are never part of the recipe.","Confuses the test with the end of the process; Lise still has to add butter and pecans and beat the candy."] },
+   opts:["The candy has turned the color of fresh fruit.", "The candy is finished and ready to be wrapped.", "Mon-mon likes to add figs to her pralines.", "The syrup is soft but firm enough to hold its shape."], key:3,
+   why:["Focuses on color, but the comparison describes how the ball feels when Lise squeezes it.", "Confuses the test with the end of the process; Lise still has to add butter and pecans and beat the candy.", "A literal reading of the simile; figs are never part of the recipe.", "Correct. A ripe fig gives when pressed but keeps its shape, like the syrup at the right stage."] },
 
- { id:"G5-LIT-PP-08", type:"cr", typeLabel:"Constructed Response (Short)", std:"RL.5.3 / W.5.9a", stdText:"Describe how a character changes; draw evidence from literary texts to support analysis.", dok:3, diff:"Hard", pts:2,
+ { id:"G5-LIT-PP-08", type:"cr", typeLabel:"Constructed Response (Short)", std:"RL.5.3 / W.5.9a", stdText:"Compare and contrast a character at two points in the story, drawing on specific details; draw evidence from literary texts to support analysis.", dok:3, diff:"Hard", pts:2,
    stem:"How does Lise change from the beginning of the story to the end? Use <strong>two</strong> details from the story to support your answer.",
    rubric:[
      ["2","Explains a valid change in Lise (for example, from impatient or overconfident to patient, humble, or willing to listen) and supports it with two relevant, accurate details from the story, at least one from early and one from late in the story."],

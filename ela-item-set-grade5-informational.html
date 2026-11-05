@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grade 5 ELA Informational Item Set: The Secret Life of Sugar Crystals | Dr. Mary K Boudreaux, EdD</title>
+<meta name="description" content="Original grade 5 informational science passage with a standards-aligned item set, item specifications, rationales, and a scoring rubric, by Dr. Mary K Boudreaux, EdD.">
+<style>
+  :root{
+    --teal:#14746F; --teal-dark:#0E5652; --teal-tint:#E6F2F1;
+    --brass:#B0832E; --brass-tint:#F7F0E2;
+    --ink:#1F2A2E; --muted:#5A6A6E; --line:#D9E2E1; --paper:#FFFFFF; --bg:#F6F8F7;
+    --ok:#1E7B4A; --ok-tint:#E5F4EB; --no:#A23B2A; --no-tint:#FBEBE7;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55}
+  a{color:var(--teal)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  header.top{background:var(--teal);color:#fff;padding:36px 0 28px}
+  header.top .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#CFE6E4;margin:0 0 6px}
+  header.top h1{font-family:var(--serif);font-weight:normal;font-size:clamp(1.7rem,3.2vw,2.5rem);margin:0 0 8px}
+  header.top p.lede{max-width:760px;margin:0;color:#E8F3F2}
+  header.top .byline{margin-top:14px;font-size:.92rem;color:#CFE6E4}
+  header.top .byline a{color:#fff}
+  .bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+  .toggle{display:inline-flex;border:1px solid var(--teal);border-radius:999px;overflow:hidden}
+  .toggle button{border:0;background:transparent;color:var(--teal);padding:8px 16px;font:600 .9rem var(--sans);cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:var(--teal);color:#fff}
+  .bar nav a{font-size:.88rem;margin-left:14px;text-decoration:none;font-weight:600}
+  .specs-card{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--brass);border-radius:10px;padding:18px 22px;margin:26px 0}
+  .specs-card h2{margin:0 0 10px;font-size:1.05rem;color:var(--teal-dark)}
+  .specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 24px;font-size:.92rem}
+  .specs-grid div b{display:block;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start;margin-bottom:40px}
+  @media (max-width:900px){.layout{grid-template-columns:1fr}}
+  .passage{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:26px 28px;position:sticky;top:66px;max-height:calc(100vh - 86px);overflow:auto}
+  @media (max-width:900px){.passage{position:static;max-height:none}}
+  .passage h2{font-family:var(--serif);font-weight:normal;font-size:1.6rem;margin:0 0 2px;color:var(--teal-dark)}
+  .passage .src{color:var(--muted);font-size:.85rem;margin:0 0 16px}
+  .passage .dir{background:var(--teal-tint);border-radius:8px;padding:10px 14px;font-size:.9rem;margin-bottom:18px}
+  .passage ol{list-style:none;counter-reset:para;margin:0;padding:0}
+  .passage li{counter-increment:para;position:relative;padding-left:38px;margin:0 0 14px;font-family:var(--serif);font-size:1.06rem;line-height:1.7}
+  .passage li::before{content:counter(para);position:absolute;left:0;top:2px;width:26px;text-align:right;font:600 .78rem var(--sans);color:var(--brass)}
+  .gloss{margin-top:22px;border-top:2px solid var(--brass);padding-top:12px}
+  .gloss h3{margin:0 0 8px;font-size:.95rem;color:var(--teal-dark)}
+  .gloss table{width:100%;border-collapse:collapse;font-size:.9rem}
+  .gloss th,.gloss td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  .gloss th{background:var(--brass-tint)}
+  .gloss td:first-child{font-style:italic;font-weight:600}
+  .gloss td:nth-child(-n+2){white-space:nowrap}
+  .items{display:flex;flex-direction:column;gap:22px}
+  .item{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+  .item-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .item-head h3{margin:0;font-size:1rem;color:var(--teal-dark)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}
+  .tag{font-size:.74rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--teal-tint);color:var(--teal-dark);white-space:nowrap}
+  .tag.brass{background:var(--brass-tint);color:#7A5A1C}
+  .tag.diff-Easy{background:#E5F4EB;color:#1E5E3B}
+  .tag.diff-Medium{background:#FFF4D6;color:#7A5A00}
+  .tag.diff-Hard{background:#FBEBE7;color:#8A2F21}
+  .stem{font-size:1rem;margin:0 0 12px}
+  .stem .part{font-weight:700;color:var(--brass)}
+  fieldset{border:0;margin:0 0 14px;padding:0}
+  legend{padding:0;margin-bottom:8px;font-weight:600}
+  .opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s,background .15s}
+  .opt:hover{border-color:var(--teal)}
+  .opt input{margin-top:4px;accent-color:var(--teal)}
+  .opt .letter{font-weight:700;color:var(--teal);min-width:1.1em}
+  .opt.correct{border-color:var(--ok);background:var(--ok-tint)}
+  .opt.incorrect{border-color:var(--no);background:var(--no-tint)}
+  .btn{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:600 .9rem var(--sans);cursor:pointer}
+  .btn:hover{background:var(--teal-dark)}
+  .btn.ghost{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+  .btn:focus-visible,.toggle button:focus-visible,.opt:focus-within,.dd-item:focus-visible,.hot:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+  .feedback{margin-top:10px;font-size:.92rem;font-weight:600;min-height:1.2em}
+  .feedback.ok{color:var(--ok)} .feedback.no{color:var(--no)}
+  .spec{display:none;margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;font-size:.92rem}
+  body.show-specs .spec{display:block}
+  .spec h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--brass)}
+  .spec table{width:100%;border-collapse:collapse;margin:6px 0 10px}
+  .spec td,.spec th{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left}
+  .spec th{background:var(--brass-tint);font-weight:600}
+  .spec .key-row td{background:var(--ok-tint)}
+  .dd-list{list-style:none;margin:0 0 12px;padding:0}
+  .dd-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;background:#fff;cursor:grab}
+  .dd-item.dragging{opacity:.5}
+  .dd-item .num{font:700 .85rem var(--sans);color:#fff;background:var(--teal);border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px}
+  .dd-item .txt{flex:1}
+  .dd-item .mv{display:flex;gap:4px}
+  .dd-item .mv button{border:1px solid var(--line);background:#fff;border-radius:6px;width:30px;height:28px;cursor:pointer;color:var(--teal);font-weight:700}
+  .dd-item.correct{border-color:var(--ok);background:var(--ok-tint)}
+  .dd-item.incorrect{border-color:var(--no);background:var(--no-tint)}
+  .hot-wrap{font-family:var(--serif);font-size:1.04rem;line-height:1.9;background:#FBFCFC;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:12px}
+  .hot-wrap .pn{font:600 .75rem var(--sans);color:var(--brass);margin-right:6px}
+  .hot{cursor:pointer;border-radius:4px;padding:1px 2px;border-bottom:2px dotted var(--teal)}
+  .hot:hover{background:var(--teal-tint)}
+  .hot[aria-pressed="true"]{background:#FFE9A8;border-bottom-color:var(--brass)}
+  .hot.correct{background:var(--ok-tint);border-bottom-color:var(--ok)}
+  .hot.incorrect{background:var(--no-tint);border-bottom-color:var(--no)}
+  textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:8px;padding:12px;font:1rem var(--serif);line-height:1.6;resize:vertical}
+  .wc{font-size:.82rem;color:var(--muted);margin:4px 0 10px}
+  .rubric th:first-child,.rubric td:first-child{width:70px;text-align:center;font-weight:700}
+  .sample{background:#FBFCFC;border-left:3px solid var(--teal);padding:8px 12px;margin:6px 0;font-family:var(--serif)}
+  .notes{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin:0 0 40px}
+  .notes h2{margin:0 0 10px;font-size:1.15rem;color:var(--teal-dark)}
+  .notes ul{margin:0;padding-left:20px} .notes li{margin-bottom:6px}
+  .score-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 20px;margin-bottom:26px}
+  .score-bar output{font-weight:700;color:var(--teal-dark)}
+  footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:.86rem}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  @media print{.bar,.btn,.score-bar{display:none} .spec{display:block} .passage{position:static;max-height:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">ELA Assessment Development Sample</p>
+    <h1>Grade 5 Informational Item Set: <em>The Secret Life of Sugar Crystals</em></h1>
+    <p class="lede">An original science article that explains why sugar forms crystals and how cooks control them, paired with eight standards-aligned items. This is Set B of the <a href="test-blueprint.html" style="color:#fff">grade 5 test blueprint</a>, the informational companion to <em>The Praline Pot</em>. Switch to <strong>Item Specifications</strong> for keys, rationales, metadata, and scoring guidance.</p>
+    <p class="byline">Passage and items written by Dr. Mary K Boudreaux, EdD &middot; <a href="./">Portfolio home</a> &middot; <a href="ela-item-set.html">Grade 5 literary set (Set A)</a></p>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="toggle" role="group" aria-label="View mode">
+      <button type="button" id="viewStudent" aria-pressed="true">Student View</button>
+      <button type="button" id="viewSpecs" aria-pressed="false">Item Specifications</button>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="#passage">Passage</a><a href="#items">Items</a><a href="#notes">Development Notes</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section class="specs-card" aria-labelledby="pspec">
+    <h2 id="pspec">Passage Specifications</h2>
+    <div class="specs-grid">
+      <div><b>Grade</b>5</div>
+      <div><b>Genre</b>Informational science article</div>
+      <div><b>Length</b>653 words, 10 numbered paragraphs</div>
+      <div><b>Quantitative measure</b>Lexile-equivalent estimate 980L (likely range 880L to 1080L), within the Grades 4 to 5 band, from the author’s <a href="lexile-analyzer.html">Readability Analyzer</a></div>
+      <div><b>Qualitative complexity</b>Moderately complex: two main ideas, cause-and-effect chains, a compare-and-contrast section, domain vocabulary defined in context, one analogy</div>
+      <div><b>Content accuracy</b>Science claims (solubility and temperature, evaporation, supersaturation, crystal formation) checked against standard food-science explanations</div>
+      <div><b>Standards family</b>CCSS ELA RI.5.1 to RI.5.5, RI.5.8, L.5.4a, L.5.4b, W.5.9b</div>
+      <div><b>Set total</b>8 items, 10 points (7 machine-scored, 2 hand-scored)</div>
+    </div>
+  </section>
+
+  <div class="score-bar" aria-live="polite">
+    <span>Machine-scored items checked: <output id="checked">0</output> of 7</span>
+    <span>Points earned: <output id="earned">0</output> of 8</span>
+    <button type="button" class="btn ghost" id="resetAll">Reset all</button>
+  </div>
+
+  <div class="layout">
+    <article class="passage" id="passage" aria-labelledby="ptitle">
+      <h2 id="ptitle">The Secret Life of Sugar Crystals</h2>
+      <p class="src">An original article by Mary K Boudreaux</p>
+      <p class="dir"><strong>Directions:</strong> Read the article. Then answer the questions that follow.</p>
+      <ol id="passageText"></ol>
+      
+    </article>
+
+    <section class="items" id="items" aria-label="Items"></section>
+  </div>
+
+  <section class="notes" id="notes" aria-labelledby="ntitle">
+    <h2 id="ntitle">Development Notes</h2>
+    <ul>
+      <li><strong>Blueprint match.</strong> Items B1 to B8 match the Set B rows of the <a href="test-blueprint.html">grade 5 test blueprint</a> exactly: standards, item types, DOK, difficulty, and points. Together with <a href="ela-item-set.html">The Praline Pot</a>, the two sets form the full 16-item, 20-point form.</li>
+      <li><strong>Why this passage.</strong> It pairs by topic with the literary set (Lise’s grainy first batch is crystallization in action) without sharing any tested content, so no item on one set helps a student answer an item on the other.</li>
+      <li><strong>Passage revision for level.</strong> The first draft measured about 1080L. I shortened sentences, defined terms in separate sentences, and replaced a few multisyllabic words until the passage measured within the grades 4 to 5 band, keeping the science intact.</li>
+      <li><strong>Distractor design.</strong> Distractors use accurate details that answer a different question, reverse a cause and effect, or confuse one candy with another, so wrong answers point to specific misunderstandings.</li>
+      <li><strong>Bias and sensitivity review.</strong> Candy making is presented as a widely shared activity; no item requires cooking experience, and every answer is supported by the article.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Dr. Mary K Boudreaux, EdD. Original passage and items; not affiliated with any testing program. Aligned to the Common Core State Standards for English Language Arts for illustration.</div>
+</footer>
+
+<script>
+const PASSAGE = [
+"Pour a spoonful of sugar into your hand and look closely. Each grain is a tiny crystal. A crystal is a solid whose smallest parts are lined up in a neat, repeating pattern. Candy makers have learned that controlling these crystals is the secret to almost every sweet they make.",
+"When you stir sugar into water, the crystals seem to vanish. They have not really disappeared. They have dissolved. The sugar has broken apart into pieces too small to see, and those pieces have spread evenly through the water. The result is a clear liquid called a solution.",
+"Water can hold only so much sugar. If you keep adding sugar to a glass of cold water, some grains will sit on the bottom no matter how long you stir. Hot water is different. Heat makes the tiny parts of water move faster, so hot water can hold more sugar. A cup of boiling water can dissolve more than twice as much sugar as a cup of cold water.",
+"Candy makers use this fact. They boil sugar and water together to make a thick syrup. As the syrup boils, water escapes into the air as steam. With less water left, the syrup becomes more concentrated. That means it holds more sugar for the amount of water in it. A cook can check how concentrated the syrup is with a candy thermometer. The hotter the boiling syrup, the less water it contains.",
+"Something surprising happens when this syrup cools. Cool syrup should not be able to hold so much sugar. But if nothing disturbs it, the sugar stays dissolved for a while. The syrup is like a crowded room where everyone is standing perfectly still. One bump can start a chain reaction. A spoon scraping the pot or a single grain of sugar falling in is enough. Sugar begins to stick to that first crystal, and more crystals form quickly.",
+"Whether a candy turns out smooth or gritty depends on how the cook handles this moment. Rock candy is made by letting syrup cool very slowly in a jar with a string hanging in it. Nothing disturbs the syrup, so a few crystals grow on the string for days. They become large enough to see and crunch.",
+"Fudge and pralines need the opposite. They need thousands of crystals so tiny that your tongue cannot feel them. To make these candies, a cook lets the syrup cool for a few minutes without touching it. Then the cook beats it hard. The beating starts many crystals at once. They all share the same sugar, so none of them can grow large. The candy turns out creamy instead of crunchy.",
+"Timing matters. If a cook stirs the syrup while it is still very hot, a few crystals form early. They keep growing as the candy cools, and those large crystals make the candy feel sandy. For this reason, recipes for creamy candy often warn cooks not to stir after the syrup starts to boil. Some recipes also tell cooks to brush the sides of the pot with a wet brush to wash stray crystals back into the syrup.",
+"Hard candies such as lollipops follow yet another rule. The syrup is boiled until almost no water is left. Then it is cooled quickly. The sugar hardens before it can line up into crystals at all, so the candy becomes smooth and glassy. Many recipes add corn syrup, which contains other kinds of sugar that get in the way of crystals.",
+"Long before kitchen thermometers were common, cooks tested syrup by dropping a little into cold water. A drop that formed a soft ball meant the syrup was ready for fudge or pralines. A drop that snapped like glass meant it was ready for hard candy. Thermometer or cup of water, cooks were reading the same clue: how much water was left and what the sugar was ready to become."
+];
+
+const ITEMS = [
+ { id:"G5-INF-SC-01", bp:"B1", type:"mc", typeLabel:"Multiple Choice", std:"L.5.4a / RI.5.4", stdText:"Determine the meaning of general academic and domain-specific words; use context as a clue to meaning.", dok:1, diff:"Easy", pts:1,
+   stem:"Read this sentence from paragraph 4.<br><em>With less water left, the syrup becomes more concentrated.</em><br>What does <strong>concentrated</strong> mean in the article?",
+   opts:["cooler and thicker than before", "holding more water for the amount of sugar", "holding more sugar for the amount of water", "bubbling more quickly than before"], key:2,
+   why:["Uses ideas from paragraph 5 (cooling) and the word “thick” from paragraph 4, but does not match the definition the author gives.", "Reverses the definition; water is leaving as steam, so there is less water for the amount of sugar.", "Correct. The next sentence defines the word: “That means it holds more sugar for the amount of water in it.”", "Draws on the word “boils,” but the paragraph does not describe the speed of bubbling."] },
+
+ { id:"G5-INF-SC-02", bp:"B2", type:"ebsr", typeLabel:"Evidence-Based Selected Response (Two-Part)", std:"RI.5.2 / RI.5.1", stdText:"Determine two or more main ideas of a text and explain how they are supported by key details; quote accurately from the text.", dok:3, diff:"Hard", pts:2,
+   parts:[
+    { label:"Part A", stem:"Which statement best describes the two main ideas of the article?",
+      opts:["Hot water can dissolve more sugar than cold water, and boiling water turns into steam.", "Rock candy takes days to make, and lollipops are made with corn syrup.", "Candy thermometers are more accurate than the cold-water test, and every kitchen should have one.", "Sugar dissolves and forms crystals in predictable ways, and cooks control those crystals to make different candies."], key:3,
+      why:["Two accurate details from paragraphs 3 and 4 that support the first main idea; neither is a main idea of the whole article.", "Two details from paragraphs 6 and 9; they support the second main idea but do not state it.", "Not supported; the article treats the thermometer and the water test as two ways to read the same clue.", "Correct. Paragraphs 1 to 5 explain how sugar behaves, and paragraphs 6 to 10 explain how cooks use that behavior."] },
+    { label:"Part B", stem:"Which sentence from the article best supports the answer to Part A?",
+      opts:["“Candy makers have learned that controlling these crystals is the secret to almost every sweet they make.” (paragraph 1)","“A cup of boiling water can dissolve more than twice as much sugar as a cup of cold water.” (paragraph 3)","“Many recipes add corn syrup, which contains other kinds of sugar that get in the way of crystals.” (paragraph 9)","“A drop that snapped like glass meant it was ready for hard candy.” (paragraph 10)"], key:0,
+      why:["Correct. This sentence links both ideas: sugar forms crystals, and cooks control them to make candy.","A supporting detail about dissolving only.","A supporting detail about one kind of candy.","A supporting detail about the cold-water test."] } ],
+   scoring:"2 points: both parts correct. 1 point: Part A correct and Part B incorrect. 0 points: Part A incorrect.",
+   hint1:"Part A is correct; look for the sentence that connects crystals and candy making.", hint0:"Look at what paragraphs 1 to 5 explain and what paragraphs 6 to 10 explain." },
+
+ { id:"G5-INF-SC-03", bp:"B3", type:"order", typeLabel:"Technology-Enhanced: Drag and Drop (Cause and Effect)", std:"RI.5.3", stdText:"Explain the relationships or interactions between two or more events, ideas, or concepts in a scientific text, based on specific information in the text.", dok:2, diff:"Medium", pts:1,
+   stem:"Put these steps in order to show how a cook makes creamy pralines. Drag each step, or use the arrow buttons, so that the first step is at the top.",
+   events:["Sugar dissolves in water.","Boiling turns some of the water into steam.","The syrup becomes more concentrated.","The cook lets the syrup cool without stirring.","The cook beats the syrup, and many tiny crystals form."],
+   start:[2,4,0,3,1],
+   scoring:"1 point: all five steps in the correct order. 0 points: any other order. Each step causes the next, so a correct order shows the cause-and-effect chain, not memory of paragraph order alone.",
+   hintNo:"Not quite. Ask what has to happen before each step can happen (paragraphs 2, 4, and 7)." },
+
+ { id:"G5-INF-SC-04", bp:"B4", type:"mc", typeLabel:"Multiple Choice", std:"RI.5.5", stdText:"Compare and contrast the overall structure of events, ideas, concepts, or information in a text.", dok:3, diff:"Hard", pts:1,
+   stem:"How does the author organize the information in paragraphs 6 to 9?",
+   opts:["by listing, in order, the steps to make one kind of candy","by comparing how cooks handle crystals to make different kinds of candy","by describing a problem and arguing for one solution to it","by telling the history of candy from the oldest kind to the newest"], key:1,
+   why:["Tempting because the paragraphs include steps, but they describe three different candies, not one.","Correct. Rock candy, fudge and pralines, and hard candy each show a different way of handling crystals.","Paragraph 8 contains a problem and a solution, but the section as a whole compares candies.","History appears only in paragraph 10, which is outside the paragraphs named."] },
+
+ { id:"G5-INF-SC-05", bp:"B5", type:"hot", typeLabel:"Technology-Enhanced: Hot Text", std:"RI.5.8", stdText:"Explain how an author uses reasons and evidence to support particular points in a text.", dok:2, diff:"Medium", pts:1,
+   stem:"In paragraph 8, the author makes the point that “timing matters.” Select the <strong>two</strong> sentences that give the reason this point is true.",
+   para:8,
+   sents:["Timing matters.","If a cook stirs the syrup while it is still very hot, a few crystals form early.","They keep growing as the candy cools, and those large crystals make the candy feel sandy.","For this reason, recipes for creamy candy often warn cooks not to stir after the syrup starts to boil.","Some recipes also tell cooks to brush the sides of the pot with a wet brush to wash stray crystals back into the syrup."],
+   keys:[1,2],
+   why:["This is the point itself, not a reason that supports it.","Correct. Explains what goes wrong when stirring happens too early.","Correct. Explains the result: large crystals and sandy candy.","A result of the point (what recipes do because timing matters), not a reason for it.","Another result: a second way cooks avoid the problem."],
+   scoring:"1 point: both correct sentences selected and no others. 0 points: any other response.",
+   okMsg:"Correct. Together, these sentences explain why stirring too early ruins creamy candy.", noMsg:"Not quite. Find the sentences that explain why, not what recipes do about it." },
+
+ { id:"G5-INF-SC-06", bp:"B6", type:"mc", typeLabel:"Multiple Choice", std:"RI.5.1", stdText:"Quote accurately from a text when explaining what the text says explicitly and when drawing inferences from the text.", dok:2, diff:"Medium", pts:1,
+   stem:"Based on paragraph 5, what would most likely happen if a grain of sugar fell into a pot of cooling syrup that no one had touched?",
+   opts:["The grain would dissolve and disappear.","Crystals would quickly begin to form around it.","The syrup would begin to boil again.","The syrup would harden into smooth, glassy candy."], key:1,
+   why:["Describes what happens in water that can still hold more sugar (paragraph 2), not in crowded cooling syrup.","Correct. Paragraph 5 says one bump, such as a falling grain, starts a chain reaction of crystals.","Boiling requires heat; the syrup in paragraph 5 is cooling.","Describes hard candy (paragraph 9), which forms when crystals do not have time to form."] },
+
+ { id:"G5-INF-SC-07", bp:"B7", type:"mc", typeLabel:"Multiple Choice", std:"L.5.4b", stdText:"Use common, grade-appropriate Greek and Latin affixes and roots as clues to the meaning of a word.", dok:1, diff:"Easy", pts:1,
+   stem:"The Greek root <em>therm</em> means “heat,” and the root <em>meter</em> means “measure.” Based on these roots, what is a <strong>thermometer</strong>?",
+   opts:["a tool that measures heat","a tool that makes heat","a pot used to heat syrup","a measure of how sweet syrup is"], key:0,
+   why:["Correct. Combines both roots: heat plus measure.","Uses the meaning of therm but ignores meter.","Connects to the cooking context but ignores both roots.","Uses the meaning of meter but replaces heat with sweetness."] },
+
+ { id:"G5-INF-SC-08", bp:"B8", type:"cr", typeLabel:"Constructed Response (Short)", std:"RI.5.2 / W.5.9b", stdText:"Explain how main ideas are supported by key details; draw evidence from informational texts to support analysis.", dok:3, diff:"Hard", pts:2,
+   stem:"Explain how a cook can use the same sugar syrup to make either crunchy rock candy or creamy fudge. Use <strong>two</strong> details from the article to support your answer.",
+   rubric:[
+     ["2","Accurately explains that the difference depends on how the cook handles crystals as the syrup cools (left undisturbed so a few crystals grow large, or beaten so many tiny crystals form), and supports the explanation with two relevant details from the article."],
+     ["1","Gives a partially accurate explanation with one supporting detail, OR lists two relevant details without explaining how they create the difference."],
+     ["0","Response is incorrect, irrelevant, copied from the article without explanation, or blank."] ],
+   accept:["Rock candy: cooled slowly and not disturbed; a few crystals grow large on a string over days (paragraph 6).","Fudge: cooled briefly, then beaten hard; many crystals start at once, so none grow large (paragraph 7).","Supporting idea: crystals share the same sugar (paragraph 7); stirring too early makes large crystals and sandy candy (paragraph 8)."],
+   samples:[
+     ["2","It depends on what the cook does while the syrup cools. For rock candy, the cook leaves it alone in a jar for days, so a few crystals grow big enough to crunch. For fudge, the cook beats it hard, which starts thousands of crystals at once. They share the sugar, so they stay too small to feel, and the fudge is creamy.","Accurate explanation with two well-chosen details, one for each candy."],
+     ["1","Rock candy has big crystals and fudge has small crystals.","Accurate contrast, but it does not explain what the cook does to cause the difference."],
+     ["0","Rock candy is crunchy and fudge is soft and both are made with sugar.","Restates the prompt without using information from the article."] ] }
+];
+
+/* ---------- render passage ---------- */
+const pt = document.getElementById('passageText');
+PASSAGE.forEach(p => { const li=document.createElement('li'); li.textContent=p; pt.appendChild(li); });
+
+/* ---------- state ---------- */
+const results = {}; // id -> points earned for machine-scored items
+function updateScore(){
+  const ids = Object.keys(results);
+  document.getElementById('checked').textContent = ids.length;
+  document.getElementById('earned').textContent = ids.reduce((a,k)=>a+results[k],0);
+}
+const L = i => String.fromCharCode(65+i);
+
+function tagsHTML(it){
+  return `<div class="tags">
+    <span class="tag">${it.id}</span>${it.bp?`<span class="tag">Blueprint ${it.bp}</span>`:""}
+    <span class="tag brass">${it.typeLabel}</span>
+    <span class="tag">CCSS ${it.std}</span>
+    <span class="tag">DOK ${it.dok}</span>
+    <span class="tag diff-${it.diff}">Difficulty: ${it.diff}</span>
+    <span class="tag">${it.pts} pt${it.pts>1?'s':''}</span>
+  </div>`;
+}
+function metaTable(it, keyText){
+  return `<table><tbody>
+    <tr><th>Standard</th><td>${it.std}: ${it.stdText}</td></tr>
+    <tr><th>Depth of Knowledge</th><td>Level ${it.dok}</td></tr>
+    <tr><th>Est. difficulty</th><td>${it.diff} (pre-field-test estimate)</td></tr>
+    ${keyText?`<tr class="key-row"><th>Key</th><td>${keyText}</td></tr>`:''}
+  </tbody></table>`;
+}
+function rationaleTable(opts, why, keys){
+  return `<table><thead><tr><th style="width:44px">Opt.</th><th>Rationale</th></tr></thead><tbody>
+    ${opts.map((o,i)=>`<tr class="${keys.includes(i)?'key-row':''}"><td><b>${L(i)}</b></td><td>${why[i]}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+function mcFieldset(name, legendHTML, opts){
+  return `<fieldset><legend class="stem">${legendHTML}</legend>
+    ${opts.map((o,i)=>`<label class="opt" data-i="${i}"><input type="radio" name="${name}" value="${i}"><span class="letter">${L(i)}</span><span>${o}</span></label>`).join('')}
+  </fieldset>`;
+}
+
+const host = document.getElementById('items');
+ITEMS.forEach((it, n) => {
+  const sec = document.createElement('article');
+  sec.className='item'; sec.id=it.id;
+  let body='', spec='';
+  if(it.type==='mc'){
+    body = mcFieldset(it.id, it.stem, it.opts) + `<button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, L(it.key))}<h4>Option rationales</h4>${rationaleTable(it.opts,it.why,[it.key])}`;
+  }
+  if(it.type==='ebsr'){
+    body = it.parts.map((p,pi)=>mcFieldset(`${it.id}-${pi}`, `<span class="part">${p.label}.</span> ${p.stem}`, p.opts)).join('') +
+      `<button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, `Part A: ${L(it.parts[0].key)}; Part B: ${L(it.parts[1].key)}`)}` +
+      it.parts.map(p=>`<h4>${p.label} rationales</h4>${rationaleTable(p.opts,p.why,[p.key])}`).join('') +
+      `<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='order'){
+    body = `<p class="stem">${it.stem}</p><ul class="dd-list" aria-label="Events to order">
+      ${it.start.map(ix=>`<li class="dd-item" draggable="true" tabindex="0" data-ix="${ix}"><span class="num"></span><span class="txt">${it.events[ix]}</span><span class="mv"><button type="button" aria-label="Move up" data-up>&uarr;</button><button type="button" aria-label="Move down" data-down>&darr;</button></span></li>`).join('')}
+      </ul><button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, it.events.map((e,i)=>`${i+1}. ${e}`).join('<br>'))}<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='hot'){
+    body = `<p class="stem">${it.stem}</p><div class="hot-wrap"><span class="pn">${it.para}</span>${it.sents.map((s,i)=>`<span class="hot" role="button" tabindex="0" aria-pressed="false" data-i="${i}">${s}</span>`).join(' ')}</div>
+      <button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, it.keys.map(k=>`Sentence ${k+1}`).join(' and '))}<h4>Selectable text rationales</h4>${rationaleTable(it.sents,it.why,it.keys)}<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='cr'){
+    body = `<p class="stem">${it.stem}</p><label class="sr-only" for="${it.id}-ta">Your response</label><textarea id="${it.id}-ta" placeholder="Type your response here."></textarea><div class="wc" aria-live="polite">0 words</div>
+      <p style="font-size:.88rem;color:var(--muted);margin:0">This item is hand-scored. Switch to Item Specifications to see the rubric and sample responses.</p>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it,'')}
+      <h4>Scoring rubric</h4><table class="rubric"><thead><tr><th>Score</th><th>Description</th></tr></thead><tbody>${it.rubric.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</tbody></table>
+      <h4>Acceptable responses may include</h4><ul>${it.accept.map(a=>`<li>${a}</li>`).join('')}</ul>
+      <h4>Anchor responses</h4>${it.samples.map(s=>`<p><b>Score ${s[0]}</b></p><div class="sample">${s[1]}</div><p style="margin:4px 0 12px"><em>Annotation:</em> ${s[2]}</p>`).join('')}`;
+  }
+  sec.innerHTML = `<div class="item-head"><h3>Item ${n+1}</h3></div>${tagsHTML(it)}${body}<div class="spec">${spec}</div>`;
+  host.appendChild(sec);
+  wire(sec, it);
+});
+
+function setFb(sec, ok, msg){
+  const fb = sec.querySelector('.feedback'); fb.className='feedback '+(ok?'ok':'no'); fb.textContent=msg;
+}
+function markOpts(fs, chosen, key){
+  fs.querySelectorAll('.opt').forEach(o=>{
+    o.classList.remove('correct','incorrect');
+    const i=+o.dataset.i;
+    if(i===key) o.classList.add('correct'); else if(i===chosen) o.classList.add('incorrect');
+  });
+}
+
+function wire(sec, it){
+  const btn = sec.querySelector('[data-check]');
+  if(it.type==='mc'){
+    btn.addEventListener('click',()=>{
+      const c = sec.querySelector('input:checked');
+      if(!c){ setFb(sec,false,'Select an answer first.'); return; }
+      const v=+c.value; markOpts(sec.querySelector('fieldset'),v,it.key);
+      results[it.id] = v===it.key?1:0; updateScore();
+      setFb(sec, v===it.key, v===it.key?`Correct. ${it.why[v]}`:`Not quite. ${it.why[v]}`);
+    });
+  }
+  if(it.type==='ebsr'){
+    btn.addEventListener('click',()=>{
+      const fss = sec.querySelectorAll('fieldset');
+      const a = sec.querySelector(`input[name="${it.id}-0"]:checked`), b = sec.querySelector(`input[name="${it.id}-1"]:checked`);
+      if(!a||!b){ setFb(sec,false,'Answer both Part A and Part B.'); return; }
+      const va=+a.value, vb=+b.value;
+      markOpts(fss[0],va,it.parts[0].key); markOpts(fss[1],vb,it.parts[1].key);
+      const pts = va===it.parts[0].key ? (vb===it.parts[1].key?2:1) : 0;
+      results[it.id]=pts; updateScore();
+      setFb(sec, pts===2, `${pts} of 2 points. ${pts===2?'Both parts are correct.':pts===1?it.hint1:it.hint0}`);
+    });
+  }
+  if(it.type==='order'){
+    const list = sec.querySelector('.dd-list');
+    const renum = ()=>list.querySelectorAll('.dd-item').forEach((li,i)=>li.querySelector('.num').textContent=i+1);
+    renum();
+    let dragEl=null;
+    list.addEventListener('dragstart',e=>{ dragEl=e.target.closest('.dd-item'); dragEl.classList.add('dragging'); e.dataTransfer.effectAllowed='move'; });
+    list.addEventListener('dragend',()=>{ if(dragEl) dragEl.classList.remove('dragging'); dragEl=null; renum(); });
+    list.addEventListener('dragover',e=>{
+      e.preventDefault(); if(!dragEl) return;
+      const after=[...list.querySelectorAll('.dd-item:not(.dragging)')].find(el=>e.clientY < el.getBoundingClientRect().top + el.offsetHeight/2);
+      after ? list.insertBefore(dragEl,after) : list.appendChild(dragEl);
+    });
+    list.addEventListener('click',e=>{
+      const li=e.target.closest('.dd-item'); if(!li) return;
+      if(e.target.closest('[data-up]') && li.previousElementSibling){ list.insertBefore(li, li.previousElementSibling); li.querySelector('[data-up]').focus(); }
+      if(e.target.closest('[data-down]') && li.nextElementSibling){ list.insertBefore(li.nextElementSibling, li); li.querySelector('[data-down]').focus(); }
+      renum(); list.querySelectorAll('.dd-item').forEach(x=>x.classList.remove('correct','incorrect'));
+    });
+    btn.addEventListener('click',()=>{
+      const lis=[...list.querySelectorAll('.dd-item')]; let all=true;
+      lis.forEach((li,i)=>{ const ok=+li.dataset.ix===i; li.classList.toggle('correct',ok); li.classList.toggle('incorrect',!ok); if(!ok) all=false; });
+      results[it.id]=all?1:0; updateScore();
+      setFb(sec, all, all?'Correct. The developments are in order.':it.hintNo);
+    });
+  }
+  if(it.type==='hot'){
+    const spans=[...sec.querySelectorAll('.hot')];
+    const toggle=s=>{ s.setAttribute('aria-pressed', s.getAttribute('aria-pressed')==='true'?'false':'true'); spans.forEach(x=>x.classList.remove('correct','incorrect')); };
+    spans.forEach(s=>{
+      s.addEventListener('click',()=>toggle(s));
+      s.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(s);} });
+    });
+    btn.addEventListener('click',()=>{
+      const sel=spans.filter(s=>s.getAttribute('aria-pressed')==='true').map(s=>+s.dataset.i);
+      if(!sel.length){ setFb(sec,false,'Select two sentences first.'); return; }
+      spans.forEach(s=>{ const i=+s.dataset.i, on=sel.includes(i); s.classList.remove('correct','incorrect');
+        if(on) s.classList.add(it.keys.includes(i)?'correct':'incorrect'); });
+      const ok = sel.length===2 && it.keys.every(k=>sel.includes(k));
+      results[it.id]=ok?1:0; updateScore();
+      setFb(sec, ok, ok?it.okMsg:it.noMsg);
+    });
+  }
+  if(it.type==='cr'){
+    const ta=sec.querySelector('textarea'), wc=sec.querySelector('.wc');
+    ta.addEventListener('input',()=>{ const n=(ta.value.trim().match(/\S+/g)||[]).length; wc.textContent=`${n} word${n===1?'':'s'}`; });
+  }
+}
+
+/* ---------- view toggle ---------- */
+const bS=document.getElementById('viewStudent'), bP=document.getElementById('viewSpecs');
+function setView(specs){ document.body.classList.toggle('show-specs',specs); bS.setAttribute('aria-pressed',!specs); bP.setAttribute('aria-pressed',specs); }
+bS.addEventListener('click',()=>setView(false)); bP.addEventListener('click',()=>setView(true));
+if(location.hash==='#specs') setView(true);
+
+document.getElementById('resetAll').addEventListener('click',()=>{
+  document.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false);
+  document.querySelectorAll('.opt,.dd-item,.hot').forEach(x=>x.classList.remove('correct','incorrect'));
+  document.querySelectorAll('.hot').forEach(x=>x.setAttribute('aria-pressed','false'));
+  document.querySelectorAll('.feedback').forEach(f=>{f.textContent='';f.className='feedback';});
+  document.querySelectorAll('textarea').forEach(t=>{t.value='';t.dispatchEvent(new Event('input'));});
+  for(const k in results) delete results[k]; updateScore();
+});
+</script>
+</body>
+</html>
