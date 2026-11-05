@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grade 5 ELA Item Set: The Praline Pot | Dr. Mary K Boudreaux, EdD</title>
+<meta name="description" content="Original grade 5 literary passage and standards-aligned item set with item specifications, answer rationales, and a scoring rubric, by Dr. Mary K Boudreaux, EdD.">
+<style>
+  :root{
+    --teal:#14746F; --teal-dark:#0E5652; --teal-tint:#E6F2F1;
+    --brass:#B0832E; --brass-tint:#F7F0E2;
+    --ink:#1F2A2E; --muted:#5A6A6E; --line:#D9E2E1; --paper:#FFFFFF; --bg:#F6F8F7;
+    --ok:#1E7B4A; --ok-tint:#E5F4EB; --no:#A23B2A; --no-tint:#FBEBE7;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55}
+  a{color:var(--teal)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  header.top{background:var(--teal);color:#fff;padding:36px 0 28px}
+  header.top .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#CFE6E4;margin:0 0 6px}
+  header.top h1{font-family:var(--serif);font-weight:normal;font-size:clamp(1.7rem,3.2vw,2.5rem);margin:0 0 8px}
+  header.top p.lede{max-width:760px;margin:0;color:#E8F3F2}
+  header.top .byline{margin-top:14px;font-size:.92rem;color:#CFE6E4}
+  header.top .byline a{color:#fff}
+  .bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+  .toggle{display:inline-flex;border:1px solid var(--teal);border-radius:999px;overflow:hidden}
+  .toggle button{border:0;background:transparent;color:var(--teal);padding:8px 16px;font:600 .9rem var(--sans);cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:var(--teal);color:#fff}
+  .bar nav a{font-size:.88rem;margin-left:14px;text-decoration:none;font-weight:600}
+  .specs-card{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--brass);border-radius:10px;padding:18px 22px;margin:26px 0}
+  .specs-card h2{margin:0 0 10px;font-size:1.05rem;color:var(--teal-dark)}
+  .specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 24px;font-size:.92rem}
+  .specs-grid div b{display:block;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start;margin-bottom:40px}
+  @media (max-width:900px){.layout{grid-template-columns:1fr}}
+  .passage{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:26px 28px;position:sticky;top:66px;max-height:calc(100vh - 86px);overflow:auto}
+  @media (max-width:900px){.passage{position:static;max-height:none}}
+  .passage h2{font-family:var(--serif);font-weight:normal;font-size:1.6rem;margin:0 0 2px;color:var(--teal-dark)}
+  .passage .src{color:var(--muted);font-size:.85rem;margin:0 0 16px}
+  .passage .dir{background:var(--teal-tint);border-radius:8px;padding:10px 14px;font-size:.9rem;margin-bottom:18px}
+  .passage ol{list-style:none;counter-reset:para;margin:0;padding:0}
+  .passage li{counter-increment:para;position:relative;padding-left:38px;margin:0 0 14px;font-family:var(--serif);font-size:1.06rem;line-height:1.7}
+  .passage li::before{content:counter(para);position:absolute;left:0;top:2px;width:26px;text-align:right;font:600 .78rem var(--sans);color:var(--brass)}
+  .gloss{margin-top:22px;border-top:2px solid var(--brass);padding-top:12px}
+  .gloss h3{margin:0 0 8px;font-size:.95rem;color:var(--teal-dark)}
+  .gloss table{width:100%;border-collapse:collapse;font-size:.9rem}
+  .gloss th,.gloss td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  .gloss th{background:var(--brass-tint)}
+  .gloss td:first-child{font-style:italic;font-weight:600}
+  .gloss td:nth-child(-n+2){white-space:nowrap}
+  .items{display:flex;flex-direction:column;gap:22px}
+  .item{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+  .item-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .item-head h3{margin:0;font-size:1rem;color:var(--teal-dark)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}
+  .tag{font-size:.74rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--teal-tint);color:var(--teal-dark);white-space:nowrap}
+  .tag.brass{background:var(--brass-tint);color:#7A5A1C}
+  .tag.diff-Easy{background:#E5F4EB;color:#1E5E3B}
+  .tag.diff-Medium{background:#FFF4D6;color:#7A5A00}
+  .tag.diff-Hard{background:#FBEBE7;color:#8A2F21}
+  .stem{font-size:1rem;margin:0 0 12px}
+  .stem .part{font-weight:700;color:var(--brass)}
+  fieldset{border:0;margin:0 0 14px;padding:0}
+  legend{padding:0;margin-bottom:8px;font-weight:600}
+  .opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s,background .15s}
+  .opt:hover{border-color:var(--teal)}
+  .opt input{margin-top:4px;accent-color:var(--teal)}
+  .opt .letter{font-weight:700;color:var(--teal);min-width:1.1em}
+  .opt.correct{border-color:var(--ok);background:var(--ok-tint)}
+  .opt.incorrect{border-color:var(--no);background:var(--no-tint)}
+  .btn{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:600 .9rem var(--sans);cursor:pointer}
+  .btn:hover{background:var(--teal-dark)}
+  .btn.ghost{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+  .btn:focus-visible,.toggle button:focus-visible,.opt:focus-within,.dd-item:focus-visible,.hot:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+  .feedback{margin-top:10px;font-size:.92rem;font-weight:600;min-height:1.2em}
+  .feedback.ok{color:var(--ok)} .feedback.no{color:var(--no)}
+  .spec{display:none;margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;font-size:.92rem}
+  body.show-specs .spec{display:block}
+  .spec h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--brass)}
+  .spec table{width:100%;border-collapse:collapse;margin:6px 0 10px}
+  .spec td,.spec th{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left}
+  .spec th{background:var(--brass-tint);font-weight:600}
+  .spec .key-row td{background:var(--ok-tint)}
+  .dd-list{list-style:none;margin:0 0 12px;padding:0}
+  .dd-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;background:#fff;cursor:grab}
+  .dd-item.dragging{opacity:.5}
+  .dd-item .num{font:700 .85rem var(--sans);color:#fff;background:var(--teal);border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px}
+  .dd-item .txt{flex:1}
+  .dd-item .mv{display:flex;gap:4px}
+  .dd-item .mv button{border:1px solid var(--line);background:#fff;border-radius:6px;width:30px;height:28px;cursor:pointer;color:var(--teal);font-weight:700}
+  .dd-item.correct{border-color:var(--ok);background:var(--ok-tint)}
+  .dd-item.incorrect{border-color:var(--no);background:var(--no-tint)}
+  .hot-wrap{font-family:var(--serif);font-size:1.04rem;line-height:1.9;background:#FBFCFC;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:12px}
+  .hot-wrap .pn{font:600 .75rem var(--sans);color:var(--brass);margin-right:6px}
+  .hot{cursor:pointer;border-radius:4px;padding:1px 2px;border-bottom:2px dotted var(--teal)}
+  .hot:hover{background:var(--teal-tint)}
+  .hot[aria-pressed="true"]{background:#FFE9A8;border-bottom-color:var(--brass)}
+  .hot.correct{background:var(--ok-tint);border-bottom-color:var(--ok)}
+  .hot.incorrect{background:var(--no-tint);border-bottom-color:var(--no)}
+  textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:8px;padding:12px;font:1rem var(--serif);line-height:1.6;resize:vertical}
+  .wc{font-size:.82rem;color:var(--muted);margin:4px 0 10px}
+  .rubric th:first-child,.rubric td:first-child{width:70px;text-align:center;font-weight:700}
+  .sample{background:#FBFCFC;border-left:3px solid var(--teal);padding:8px 12px;margin:6px 0;font-family:var(--serif)}
+  .notes{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin:0 0 40px}
+  .notes h2{margin:0 0 10px;font-size:1.15rem;color:var(--teal-dark)}
+  .notes ul{margin:0;padding-left:20px} .notes li{margin-bottom:6px}
+  .score-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 20px;margin-bottom:26px}
+  .score-bar output{font-weight:700;color:var(--teal-dark)}
+  footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:.86rem}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  @media print{.bar,.btn,.score-bar{display:none} .spec{display:block} .passage{position:static;max-height:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">ELA Assessment Development Sample</p>
+    <h1>Grade 5 Literary Item Set: <em>The Praline Pot</em></h1>
+    <p class="lede">An original literary passage paired with eight standards-aligned items: selected response, an evidence-based two-part item, two technology-enhanced items, and a constructed response with a scoring rubric. Switch to <strong>Item Specifications</strong> to see keys, distractor rationales, metadata, and scoring guidance.</p>
+    <p class="byline">Passage and items written by Dr. Mary K Boudreaux, EdD &middot; <a href="./">Portfolio home</a></p>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="toggle" role="group" aria-label="View mode">
+      <button type="button" id="viewStudent" aria-pressed="true">Student View</button>
+      <button type="button" id="viewSpecs" aria-pressed="false">Item Specifications</button>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="#passage">Passage</a><a href="#items">Items</a><a href="#notes">Development Notes</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section class="specs-card" aria-labelledby="pspec">
+    <h2 id="pspec">Passage Specifications</h2>
+    <div class="specs-grid">
+      <div><b>Grade</b>5</div>
+      <div><b>Genre</b>Realistic fiction (literary)</div>
+      <div><b>Length</b>638 words, 20 numbered paragraphs</div>
+      <div><b>Quantitative measure</b>Lexile-equivalent estimate 890L (likely range 790L to 990L), Grades 4 to 5 band, from the author’s <a href="lexile-analyzer.html">Readability Analyzer</a>; confirm with an official Lexile measure before field use</div>
+      <div><b>Qualitative complexity</b>Moderately complex: implied theme, figurative language, character change shown through action and dialogue</div>
+      <div><b>Setting and culture</b>A Louisiana Creole family kitchen in St. Martinville on Bayou Teche; family terms (Mon-mon, Chère, Bébé) match the author’s chapter books and are glossed below the passage</div>
+      <div><b>Standards family</b>CCSS ELA RL.5.1 to RL.5.5, L.5.4a, L.5.5a, W.5.9a (adaptable to state standards)</div>
+      <div><b>Set total</b>8 items, 10 points (8 machine-scored, 2 hand-scored)</div>
+    </div>
+  </section>
+
+  <div class="score-bar" aria-live="polite">
+    <span>Machine-scored items checked: <output id="checked">0</output> of 7</span>
+    <span>Points earned: <output id="earned">0</output> of 8</span>
+    <button type="button" class="btn ghost" id="resetAll">Reset all</button>
+  </div>
+
+  <div class="layout">
+    <article class="passage" id="passage" aria-labelledby="ptitle">
+      <h2 id="ptitle">The Praline Pot</h2>
+      <p class="src">An original story by Mary K Boudreaux</p>
+      <p class="dir"><strong>Directions:</strong> Read the story. Then answer the questions that follow.</p>
+      <ol id="passageText"></ol>
+      <aside class="gloss" aria-label="Words to know">
+        <h3>Words to Know</h3>
+        <table><thead><tr><th>Term</th><th>Say it</th><th>Meaning</th></tr></thead><tbody>
+          <tr><td>Mon-mon</td><td>MOHN-mohn</td><td>Grandmother</td></tr>
+          <tr><td>Cher, Chère</td><td>SHARE</td><td>Dear. A term of endearment</td></tr>
+          <tr><td>Bébé</td><td>bah-BAY</td><td>Baby. A term of endearment; capitalized when said straight to one person</td></tr>
+        </tbody></table>
+      </aside>
+    </article>
+
+    <section class="items" id="items" aria-label="Items"></section>
+  </div>
+
+  <section class="notes" id="notes" aria-labelledby="ntitle">
+    <h2 id="ntitle">Development Notes</h2>
+    <ul>
+      <li><strong>Blueprint coverage.</strong> Key ideas and details (Items 2, 3, 4, 5, 8), craft and structure (Items 1, 6, 7), and vocabulary acquisition (Items 1, 7). Depth of Knowledge ranges from Level 1 to Level 3, with three items at Level 3.</li>
+      <li><strong>Difficulty targets.</strong> Difficulty labels are author estimates prior to field testing, with target p-values of .70 to .85 (Easy), .50 to .70 (Medium), and .30 to .50 (Hard). Final classifications would be set from field-test statistics and distractor analysis.</li>
+      <li><strong>Distractor design.</strong> Every distractor is plausible and tied to a specific misreading: a detail that appears in the text but does not answer the question, a partial understanding, or an overgeneralization. No "all of the above," no negative stems, and options are parallel in length and structure.</li>
+      <li><strong>Bias and sensitivity review.</strong> The cultural setting is presented from the inside and without stereotype; family terms (<em>Mon-mon</em>, <em>Chère</em>, <em>Bébé</em>) are glossed with pronunciations, are understandable from context, and are not tested. Stovetop cooking happens with an adult present. No item requires background knowledge of candy making; every answer is supported by the passage.</li>
+      <li><strong>Accessibility.</strong> Numbered paragraphs for reference, keyboard alternatives for both technology-enhanced items (move buttons for ordering; selectable text that works with Enter or Space), visible focus states, and live feedback announced to screen readers.</li>
+      <li><strong>AI-assisted workflow.</strong> Drafts can be stress-tested with generative AI (for example, asking a model to argue for each distractor), but every key, rationale, and alignment decision in this set was written and verified by the author against the passage and the standards.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Dr. Mary K Boudreaux, EdD. Original passage and items; not affiliated with any testing program. Aligned to the Common Core State Standards for English Language Arts for illustration.</div>
+</footer>
+
+<script>
+const PASSAGE = [
+"Every October, the kitchen on Bridge Street smelled like butter and brown sugar for three straight days. That was when Lise’s grandmother, Mon-mon, made pralines for the church fair in St. Martinville, two hundred of them, each one wrapped in wax paper and tied with string. This year, though, Mon-mon sat at the table with her right wrist in a stiff blue brace, and the big copper pot hung on its hook, cold.",
+"“The fair is Saturday,” said Lise, who was eleven and had watched the praline making every year of her life. “I can do it.”",
+"Mon-mon looked at her over her glasses. “Watching is not the same as doing, chère.”",
+"“I know every step,” Lise said. “Sugar, cream, butter, pecans. Stir, stir, stir, and drop.” She was already tying on the striped apron that came down to her knees.",
+"Mon-mon sighed, but she pulled her chair closer to the stove. “Then I will sit right here, and I will keep my hands in my lap.”",
+"Lise measured the sugar and cream into the pot and turned the flame up high. She wanted the pralines finished before supper. When the mixture began to bubble, she stirred it hard, the way she remembered, scraping the spoon around and around.",
+"“Not yet,” said Mon-mon. “Let it cook.”",
+"“It is cooking,” Lise said, and she kept stirring.",
+"After a few minutes, she poured in the pecans, beat the candy with her spoon, and dropped the first spoonfuls onto the wax paper. Instead of spreading into smooth, shiny circles, they sat in lumpy piles. When Lise touched one, it felt like wet sand. She broke off a piece and tasted it. It was sweet, but it crunched like a spoonful of sugar straight from the bowl.",
+"“They crystallized,” Mon-mon said gently. “The sugar turned back into tiny grains because it was rushed and stirred too soon.”",
+"Lise’s face burned hotter than the stove. She wanted to scrape the whole tray into the trash and run out to the porch. Instead, she stared at the lumpy candy and asked in a small voice, “How do you know when it is ready?”",
+"Mon-mon smiled for the first time that afternoon. “Bring me a cup of cold water.”",
+"They started again. This time Lise kept the flame low. She stirred only until the sugar melted, and then she let the pot bubble on its own, even though waiting felt like holding her breath. Every few minutes, Mon-mon told her to drip a little of the syrup into the cup of water.",
+"The first drops spread out like thin ribbons and disappeared. “Too soon,” said Mon-mon. The next drops made a soft thread that fell apart in Lise’s fingers. “Closer.” At last, a drop sank to the bottom and gathered itself into a small ball that Lise could squeeze between her thumb and finger, soft as a ripe fig.",
+"“Now, Bébé,” Mon-mon said. “Off the fire. Butter and pecans. Then count to one hundred before you beat it.”",
+"Lise counted slowly, the way Mon-mon counted when she prayed. Then she beat the candy until it lost a little of its shine and turned thick and creamy. She dropped the first spoonful. It spread into a smooth, glossy circle the color of a pecan shell, and it stayed that way.",
+"Lise did not cheer. She was too busy dropping the next one, and the next, before the candy could set in the pot.",
+"By Friday night, two hundred pralines lay in rows across every counter in the kitchen. Some were a little crooked, and a few were too thin, but every one of them was smooth.",
+"“You did it,” Mon-mon said.",
+"Lise shook her head and held up the cup of cold water. “We did it,” she said. “I just had to stop stirring long enough to listen.”"
+];
+
+const ITEMS = [
+ { id:"G5-LIT-PP-01", type:"mc", typeLabel:"Multiple Choice", std:"L.5.4a / RL.5.4", stdText:"Use context as a clue to the meaning of a word or phrase.", dok:1, diff:"Easy", pts:1,
+   stem:"Read this sentence from paragraph 10.<br><em>“They crystallized,” Mon-mon said gently.</em><br>What does <strong>crystallized</strong> mean as it is used in the story?",
+   opts:["melted into a thin, runny syrup","formed into small, hard grains of sugar","burned on the bottom of the pot","hardened into a smooth, shiny candy"], key:1,
+   why:["Describes an earlier stage of cooking (paragraph 13), the opposite of what happened to the first batch.","Correct. Mon-mon explains that the sugar “turned back into tiny grains,” and paragraph 9 says the candy felt like wet sand and crunched like sugar.","Plausible because Lise turned the flame up high, but the text never mentions burning; the problem is texture, not scorching.","Describes the successful second batch (paragraph 16), the reverse of what crystallized candy looks like."] },
+
+ { id:"G5-LIT-PP-02", type:"mc", typeLabel:"Multiple Choice", std:"RL.5.3", stdText:"Compare and contrast two characters, drawing on specific details in the text.", dok:2, diff:"Medium", pts:1,
+   stem:"Which statement best describes how Mon-mon helps Lise make the pralines?",
+   opts:["She takes over the cooking after the first batch fails.","She stays silent so that Lise can learn only from her own mistakes.","She guides Lise with advice and a water test but lets Lise do the work.","She reads the recipe aloud so that Lise can follow each step."], key:2,
+   why:["Mon-mon keeps “my hands in my lap” (paragraph 5); Lise does all the cooking in both batches.","Attractive to students who notice Mon-mon lets Lise fail, but she speaks throughout (“Not yet,” “Too soon,” “Closer”).","Correct. Mon-mon gives directions and teaches the cold-water test (paragraphs 12 to 15) while Lise cooks.","No written recipe appears in the story; the knowledge Mon-mon shares comes from experience and testing."] },
+
+ { id:"G5-LIT-PP-03", type:"ebsr", typeLabel:"Evidence-Based Selected Response (Two-Part)", std:"RL.5.2 / RL.5.1", stdText:"Determine a theme from details in the text; quote accurately when drawing inferences.", dok:3, diff:"Hard", pts:2,
+   parts:[
+    { label:"Part A", stem:"Which statement best expresses a theme of the story?",
+      opts:["Family traditions matter more than winning a contest.","Children should not attempt difficult work without an adult.","Patience and a willingness to listen help people learn new skills.","Hard work always leads to perfect results."], key:2,
+      why:["There is no contest in the story; the pralines are for a church fair, not a competition.","Partially supported, since Mon-mon is present, but the story shows Lise succeeding at the work herself once she listens.","Correct. Lise fails when she rushes and succeeds when she waits and follows Mon-mon’s guidance.","Contradicted by paragraph 18: some pralines are “a little crooked” and “too thin.”"] },
+    { label:"Part B", stem:"Which sentence from the story best supports the answer to Part A?",
+      opts:["“The fair is Saturday,” said Lise, who was eleven and had watched the praline making every year of her life. (paragraph 2)","Lise’s face burned hotter than the stove. (paragraph 11)","By Friday night, two hundred pralines lay in rows across every counter in the kitchen. (paragraph 18)","“I just had to stop stirring long enough to listen.” (paragraph 20)"], key:3,
+      why:["Establishes the deadline and Lise’s experience watching, not the lesson she learns.","Shows Lise’s embarrassment, an emotion, but not what she learns from the experience.","Shows the outcome of the work, not the reason she succeeded.","Correct. Lise names the lesson herself: waiting and listening made the difference."] } ],
+   scoring:"2 points: both parts correct. 1 point: Part A correct and Part B incorrect. 0 points: Part A incorrect (Part B is not scored independently)." },
+
+ { id:"G5-LIT-PP-04", type:"order", typeLabel:"Technology-Enhanced: Drag and Drop (Sequencing)", std:"RL.5.2", stdText:"Summarize the text.", dok:2, diff:"Medium", pts:1,
+   stem:"Put these events from the story in the order in which they happen. Drag each event, or use the arrow buttons, so that the first event is at the top.",
+   events:["Lise offers to make the pralines for the church fair.","Lise stirs the hot mixture hard, and the first batch turns grainy.","Lise asks Mon-mon how to tell when the candy is ready.","Lise tests drops of syrup in a cup of cold water.","Lise tells Mon-mon, “We did it.”"],
+   start:[2,4,0,3,1],
+   scoring:"1 point: all five events in the correct order. 0 points: any event out of order. Events were chosen to represent the beginning, turning point, and resolution, so a correct order reflects a summary of the plot rather than memory of minor details." },
+
+ { id:"G5-LIT-PP-05", type:"hot", typeLabel:"Technology-Enhanced: Hot Text", std:"RL.5.3 / RL.5.1", stdText:"Describe how a character responds to challenges, using details from the text.", dok:2, diff:"Medium", pts:1,
+   stem:"In paragraph 13, Lise makes the second batch differently. Select the <strong>two</strong> sentences that show what Lise does differently this time.",
+   para:13,
+   sents:["They started again.","This time Lise kept the flame low.","She stirred only until the sugar melted, and then she let the pot bubble on its own, even though waiting felt like holding her breath.","Every few minutes, Mon-mon told her to drip a little of the syrup into the cup of water."],
+   keys:[1,2],
+   why:["Tells that the work begins again, but not what changes.","Correct. In the first batch she “turned the flame up high” (paragraph 6).","Correct. In the first batch she “stirred it hard” and “kept stirring” (paragraphs 6 and 8).","Describes Mon-mon’s action, not a change in what Lise does on her own."],
+   scoring:"1 point: both correct sentences selected and no others. 0 points: any other response." },
+
+ { id:"G5-LIT-PP-06", type:"mc", typeLabel:"Multiple Choice", std:"RL.5.5", stdText:"Explain how a series of scenes fits together to provide the overall structure of a story.", dok:3, diff:"Hard", pts:1,
+   stem:"Why does the author include the scene of the first, failed batch of pralines (paragraphs 6 to 10)?",
+   opts:["to teach readers the steps for making pralines at home","to create a contrast that makes Lise’s later change and success clearer","to explain how Mon-mon hurt her wrist before the fair","to show that Lise does not care about the church fair"], key:1,
+   why:["Tempting because the story includes cooking details, but it is fiction; the details serve the plot, not instruction.","Correct. The rushed first batch sets up the patient second batch, so readers can see how Lise changes.","The story never explains how Mon-mon was hurt; the brace is already on in paragraph 1.","Contradicted by the text; Lise volunteers eagerly and works until Friday night."] },
+
+ { id:"G5-LIT-PP-07", type:"mc", typeLabel:"Multiple Choice", std:"L.5.5a / RL.5.4", stdText:"Interpret figurative language, including similes, in context.", dok:2, diff:"Medium", pts:1,
+   stem:"In paragraph 14, the author says the ball of syrup is “soft as a ripe fig.” What does this comparison help the reader understand?",
+   opts:["The candy has turned the color of fresh fruit.","The syrup is soft but firm enough to hold its shape.","Mon-mon likes to add figs to her pralines.","The candy is finished and ready to be wrapped."], key:1,
+   why:["Focuses on color, but the comparison describes how the ball feels when Lise squeezes it.","Correct. A ripe fig gives when pressed but keeps its shape, like the syrup at the right stage.","A literal reading of the simile; figs are never part of the recipe.","Confuses the test with the end of the process; Lise still has to add butter and pecans and beat the candy."] },
+
+ { id:"G5-LIT-PP-08", type:"cr", typeLabel:"Constructed Response (Short)", std:"RL.5.3 / W.5.9a", stdText:"Describe how a character changes; draw evidence from literary texts to support analysis.", dok:3, diff:"Hard", pts:2,
+   stem:"How does Lise change from the beginning of the story to the end? Use <strong>two</strong> details from the story to support your answer.",
+   rubric:[
+     ["2","Explains a valid change in Lise (for example, from impatient or overconfident to patient, humble, or willing to listen) and supports it with two relevant, accurate details from the story, at least one from early and one from late in the story."],
+     ["1","Explains a valid change with only one supporting detail, OR gives two relevant details without clearly explaining the change, OR the explanation is partially accurate."],
+     ["0","Response is incorrect, irrelevant, copied from the story without explanation, or blank."] ],
+   accept:["Change: impatient to patient; overconfident to humble; not listening to listening; working alone to sharing credit.","Early evidence: “I know every step” (4); turns flame up high so she can finish before supper (6); “It is cooking” and keeps stirring (8).","Turning point: asks “How do you know when it is ready?” (11).","Late evidence: keeps flame low and waits (13); counts slowly to one hundred (16); “We did it” and “stop stirring long enough to listen” (20)."],
+   samples:[
+     ["2","At the beginning Lise is impatient and thinks she already knows everything. She says “I know every step” and keeps stirring even when Mon-mon says not yet. By the end she has learned to wait and listen. She keeps the flame low on the second batch and says “We did it,” which shows she knows Mon-mon helped her.","Clear change (impatient to patient and listening) with accurate early and late evidence."],
+     ["1","Lise changes because she learns how to make pralines. At the end she makes two hundred pralines for the fair.","Describes an outcome rather than a change in character; one loosely relevant detail."],
+     ["0","Lise lives in St. Martinville with her grandmother.","Accurate detail but does not address how Lise changes."] ] }
+];
+
+/* ---------- render passage ---------- */
+const pt = document.getElementById('passageText');
+PASSAGE.forEach(p => { const li=document.createElement('li'); li.textContent=p; pt.appendChild(li); });
+
+/* ---------- state ---------- */
+const results = {}; // id -> points earned for machine-scored items
+function updateScore(){
+  const ids = Object.keys(results);
+  document.getElementById('checked').textContent = ids.length;
+  document.getElementById('earned').textContent = ids.reduce((a,k)=>a+results[k],0);
+}
+const L = i => String.fromCharCode(65+i);
+
+function tagsHTML(it){
+  return `<div class="tags">
+    <span class="tag">${it.id}</span>
+    <span class="tag brass">${it.typeLabel}</span>
+    <span class="tag">CCSS ${it.std}</span>
+    <span class="tag">DOK ${it.dok}</span>
+    <span class="tag diff-${it.diff}">Difficulty: ${it.diff}</span>
+    <span class="tag">${it.pts} pt${it.pts>1?'s':''}</span>
+  </div>`;
+}
+function metaTable(it, keyText){
+  return `<table><tbody>
+    <tr><th>Standard</th><td>${it.std}: ${it.stdText}</td></tr>
+    <tr><th>Depth of Knowledge</th><td>Level ${it.dok}</td></tr>
+    <tr><th>Est. difficulty</th><td>${it.diff} (pre-field-test estimate)</td></tr>
+    ${keyText?`<tr class="key-row"><th>Key</th><td>${keyText}</td></tr>`:''}
+  </tbody></table>`;
+}
+function rationaleTable(opts, why, keys){
+  return `<table><thead><tr><th style="width:44px">Opt.</th><th>Rationale</th></tr></thead><tbody>
+    ${opts.map((o,i)=>`<tr class="${keys.includes(i)?'key-row':''}"><td><b>${L(i)}</b></td><td>${why[i]}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+function mcFieldset(name, legendHTML, opts){
+  return `<fieldset><legend class="stem">${legendHTML}</legend>
+    ${opts.map((o,i)=>`<label class="opt" data-i="${i}"><input type="radio" name="${name}" value="${i}"><span class="letter">${L(i)}</span><span>${o}</span></label>`).join('')}
+  </fieldset>`;
+}
+
+const host = document.getElementById('items');
+ITEMS.forEach((it, n) => {
+  const sec = document.createElement('article');
+  sec.className='item'; sec.id=it.id;
+  let body='', spec='';
+  if(it.type==='mc'){
+    body = mcFieldset(it.id, it.stem, it.opts) + `<button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, L(it.key))}<h4>Option rationales</h4>${rationaleTable(it.opts,it.why,[it.key])}`;
+  }
+  if(it.type==='ebsr'){
+    body = it.parts.map((p,pi)=>mcFieldset(`${it.id}-${pi}`, `<span class="part">${p.label}.</span> ${p.stem}`, p.opts)).join('') +
+      `<button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, `Part A: ${L(it.parts[0].key)}; Part B: ${L(it.parts[1].key)}`)}` +
+      it.parts.map(p=>`<h4>${p.label} rationales</h4>${rationaleTable(p.opts,p.why,[p.key])}`).join('') +
+      `<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='order'){
+    body = `<p class="stem">${it.stem}</p><ul class="dd-list" aria-label="Events to order">
+      ${it.start.map(ix=>`<li class="dd-item" draggable="true" tabindex="0" data-ix="${ix}"><span class="num"></span><span class="txt">${it.events[ix]}</span><span class="mv"><button type="button" aria-label="Move up" data-up>&uarr;</button><button type="button" aria-label="Move down" data-down>&darr;</button></span></li>`).join('')}
+      </ul><button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, it.events.map((e,i)=>`${i+1}. ${e}`).join('<br>'))}<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='hot'){
+    body = `<p class="stem">${it.stem}</p><div class="hot-wrap"><span class="pn">${it.para}</span>${it.sents.map((s,i)=>`<span class="hot" role="button" tabindex="0" aria-pressed="false" data-i="${i}">${s}</span>`).join(' ')}</div>
+      <button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, it.keys.map(k=>`Sentence ${k+1}`).join(' and '))}<h4>Selectable text rationales</h4>${rationaleTable(it.sents,it.why,it.keys)}<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='cr'){
+    body = `<p class="stem">${it.stem}</p><label class="sr-only" for="${it.id}-ta">Your response</label><textarea id="${it.id}-ta" placeholder="Type your response here."></textarea><div class="wc" aria-live="polite">0 words</div>
+      <p style="font-size:.88rem;color:var(--muted);margin:0">This item is hand-scored. Switch to Item Specifications to see the rubric and sample responses.</p>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it,'')}
+      <h4>Scoring rubric</h4><table class="rubric"><thead><tr><th>Score</th><th>Description</th></tr></thead><tbody>${it.rubric.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</tbody></table>
+      <h4>Acceptable responses may include</h4><ul>${it.accept.map(a=>`<li>${a}</li>`).join('')}</ul>
+      <h4>Anchor responses</h4>${it.samples.map(s=>`<p><b>Score ${s[0]}</b></p><div class="sample">${s[1]}</div><p style="margin:4px 0 12px"><em>Annotation:</em> ${s[2]}</p>`).join('')}`;
+  }
+  sec.innerHTML = `<div class="item-head"><h3>Item ${n+1}</h3></div>${tagsHTML(it)}${body}<div class="spec">${spec}</div>`;
+  host.appendChild(sec);
+  wire(sec, it);
+});
+
+function setFb(sec, ok, msg){
+  const fb = sec.querySelector('.feedback'); fb.className='feedback '+(ok?'ok':'no'); fb.textContent=msg;
+}
+function markOpts(fs, chosen, key){
+  fs.querySelectorAll('.opt').forEach(o=>{
+    o.classList.remove('correct','incorrect');
+    const i=+o.dataset.i;
+    if(i===key) o.classList.add('correct'); else if(i===chosen) o.classList.add('incorrect');
+  });
+}
+
+function wire(sec, it){
+  const btn = sec.querySelector('[data-check]');
+  if(it.type==='mc'){
+    btn.addEventListener('click',()=>{
+      const c = sec.querySelector('input:checked');
+      if(!c){ setFb(sec,false,'Select an answer first.'); return; }
+      const v=+c.value; markOpts(sec.querySelector('fieldset'),v,it.key);
+      results[it.id] = v===it.key?1:0; updateScore();
+      setFb(sec, v===it.key, v===it.key?`Correct. ${it.why[v]}`:`Not quite. ${it.why[v]}`);
+    });
+  }
+  if(it.type==='ebsr'){
+    btn.addEventListener('click',()=>{
+      const fss = sec.querySelectorAll('fieldset');
+      const a = sec.querySelector(`input[name="${it.id}-0"]:checked`), b = sec.querySelector(`input[name="${it.id}-1"]:checked`);
+      if(!a||!b){ setFb(sec,false,'Answer both Part A and Part B.'); return; }
+      const va=+a.value, vb=+b.value;
+      markOpts(fss[0],va,it.parts[0].key); markOpts(fss[1],vb,it.parts[1].key);
+      const pts = va===it.parts[0].key ? (vb===it.parts[1].key?2:1) : 0;
+      results[it.id]=pts; updateScore();
+      setFb(sec, pts===2, `${pts} of 2 points. ${pts===2?'Both parts are correct.':pts===1?'Part A is correct; reread paragraph 20 for the best evidence.':'Reread the ending: what does Lise say she learned?'}`);
+    });
+  }
+  if(it.type==='order'){
+    const list = sec.querySelector('.dd-list');
+    const renum = ()=>list.querySelectorAll('.dd-item').forEach((li,i)=>li.querySelector('.num').textContent=i+1);
+    renum();
+    let dragEl=null;
+    list.addEventListener('dragstart',e=>{ dragEl=e.target.closest('.dd-item'); dragEl.classList.add('dragging'); e.dataTransfer.effectAllowed='move'; });
+    list.addEventListener('dragend',()=>{ if(dragEl) dragEl.classList.remove('dragging'); dragEl=null; renum(); });
+    list.addEventListener('dragover',e=>{
+      e.preventDefault(); if(!dragEl) return;
+      const after=[...list.querySelectorAll('.dd-item:not(.dragging)')].find(el=>e.clientY < el.getBoundingClientRect().top + el.offsetHeight/2);
+      after ? list.insertBefore(dragEl,after) : list.appendChild(dragEl);
+    });
+    list.addEventListener('click',e=>{
+      const li=e.target.closest('.dd-item'); if(!li) return;
+      if(e.target.closest('[data-up]') && li.previousElementSibling){ list.insertBefore(li, li.previousElementSibling); li.querySelector('[data-up]').focus(); }
+      if(e.target.closest('[data-down]') && li.nextElementSibling){ list.insertBefore(li.nextElementSibling, li); li.querySelector('[data-down]').focus(); }
+      renum(); list.querySelectorAll('.dd-item').forEach(x=>x.classList.remove('correct','incorrect'));
+    });
+    btn.addEventListener('click',()=>{
+      const lis=[...list.querySelectorAll('.dd-item')]; let all=true;
+      lis.forEach((li,i)=>{ const ok=+li.dataset.ix===i; li.classList.toggle('correct',ok); li.classList.toggle('incorrect',!ok); if(!ok) all=false; });
+      results[it.id]=all?1:0; updateScore();
+      setFb(sec, all, all?'Correct. The events are in story order.':'Not quite. Events marked in red are out of order; check the beginning, the turning point, and the end.');
+    });
+  }
+  if(it.type==='hot'){
+    const spans=[...sec.querySelectorAll('.hot')];
+    const toggle=s=>{ s.setAttribute('aria-pressed', s.getAttribute('aria-pressed')==='true'?'false':'true'); spans.forEach(x=>x.classList.remove('correct','incorrect')); };
+    spans.forEach(s=>{
+      s.addEventListener('click',()=>toggle(s));
+      s.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(s);} });
+    });
+    btn.addEventListener('click',()=>{
+      const sel=spans.filter(s=>s.getAttribute('aria-pressed')==='true').map(s=>+s.dataset.i);
+      if(!sel.length){ setFb(sec,false,'Select two sentences first.'); return; }
+      spans.forEach(s=>{ const i=+s.dataset.i, on=sel.includes(i); s.classList.remove('correct','incorrect');
+        if(on) s.classList.add(it.keys.includes(i)?'correct':'incorrect'); });
+      const ok = sel.length===2 && it.keys.every(k=>sel.includes(k));
+      results[it.id]=ok?1:0; updateScore();
+      setFb(sec, ok, ok?'Correct. Both sentences contrast with how Lise made the first batch.':'Not quite. Compare these sentences with what Lise does in paragraphs 6 and 8.');
+    });
+  }
+  if(it.type==='cr'){
+    const ta=sec.querySelector('textarea'), wc=sec.querySelector('.wc');
+    ta.addEventListener('input',()=>{ const n=(ta.value.trim().match(/\S+/g)||[]).length; wc.textContent=`${n} word${n===1?'':'s'}`; });
+  }
+}
+
+/* ---------- view toggle ---------- */
+const bS=document.getElementById('viewStudent'), bP=document.getElementById('viewSpecs');
+function setView(specs){ document.body.classList.toggle('show-specs',specs); bS.setAttribute('aria-pressed',!specs); bP.setAttribute('aria-pressed',specs); }
+bS.addEventListener('click',()=>setView(false)); bP.addEventListener('click',()=>setView(true));
+if(location.hash==='#specs') setView(true);
+
+document.getElementById('resetAll').addEventListener('click',()=>{
+  document.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false);
+  document.querySelectorAll('.opt,.dd-item,.hot').forEach(x=>x.classList.remove('correct','incorrect'));
+  document.querySelectorAll('.hot').forEach(x=>x.setAttribute('aria-pressed','false'));
+  document.querySelectorAll('.feedback').forEach(f=>{f.textContent='';f.className='feedback';});
+  document.querySelectorAll('textarea').forEach(t=>{t.value='';t.dispatchEvent(new Event('input'));});
+  for(const k in results) delete results[k]; updateScore();
+});
+</script>
+</body>
+</html>
