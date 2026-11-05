@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Item Review Case Study | Dr. Mary K Boudreaux, EdD</title>
+<meta name="description" content="A one-page case study showing how an AI-drafted ELA item is prompted, audited for alignment, key accuracy, distractor quality, and bias, and revised by a content expert.">
+<style>
+  :root{--teal:#14746F;--teal-dark:#0E5652;--teal-tint:#E6F2F1;--brass:#B0832E;--brass-tint:#F7F0E2;--ink:#1F2A2E;--muted:#5A6A6E;--line:#D9E2E1;
+        --red:#8A2F21;--red-tint:#FBEBE7;--green:#1E5E3B;--green-tint:#E5F4EB;
+        --serif:Georgia,"Times New Roman",serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  body{margin:0;background:#F6F8F7;color:var(--ink);font-family:var(--sans);line-height:1.42}
+  .bar{max-width:8.5in;margin:16px auto 0;display:flex;justify-content:space-between;font-size:.85rem}
+  .bar a{color:var(--teal);font-weight:600;text-decoration:none}
+  .bar button{background:var(--teal);color:#fff;border:0;border-radius:6px;padding:6px 12px;font:600 .82rem var(--sans);cursor:pointer}
+  .page{max-width:8.5in;margin:12px auto 24px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:.45in .5in .4in}
+  .top{border-bottom:3px solid var(--teal);padding-bottom:8px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:flex-end;gap:14px}
+  .top h1{font-family:var(--serif);font-weight:normal;font-size:1.55rem;margin:0;color:var(--teal-dark)}
+  .top .sub{font-size:.8rem;color:var(--muted);margin:2px 0 0}
+  .top .by{font-size:.74rem;color:var(--muted);text-align:right;white-space:nowrap}
+  .ctx{font-size:.8rem;background:var(--teal-tint);border-radius:8px;padding:7px 12px;margin-bottom:10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}
+  h2{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin:0 0 5px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .step{font:700 .7rem var(--sans);color:#fff;background:var(--teal);border-radius:50%;width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;margin-right:5px;vertical-align:1px}
+  .prompt{font:.72rem/1.45 var(--mono);background:#F4F6F6;border:1px solid var(--line);border-radius:6px;padding:8px 10px;white-space:pre-wrap;margin:0}
+  .item{border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:.78rem}
+  .item.draft{border-left:4px solid var(--red);background:#FFFDFC}
+  .item.final{border-left:4px solid var(--green);background:#FCFEFD}
+  .item .meta{font-size:.68rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+  .item p{margin:3px 0}
+  .item ol{margin:3px 0 3px 0;padding-left:18px} .item li{margin-bottom:2px}
+  .item li.k{font-weight:700}
+  mark{background:#FFE3D9;padding:0 2px;border-radius:3px}
+  mark sup,.n{font:700 .62rem var(--sans);color:#fff;background:var(--red);border-radius:8px;padding:0 4px;margin-left:2px}
+  .review{list-style:none;margin:0;padding:0;font-size:.76rem}
+  .review li{display:grid;grid-template-columns:22px 1fr;gap:6px;margin-bottom:6px;align-items:start}
+  .review .n{display:inline-flex;justify-content:center;margin:1px 0 0;padding:1px 0;width:18px}
+  .review b{color:var(--red)}
+  .why{font-size:.72rem;color:var(--muted);margin:4px 0 0}
+  .table{width:100%;border-collapse:collapse;font-size:.72rem;margin-top:5px}
+  .table td,.table th{border:1px solid var(--line);padding:3px 6px;vertical-align:top;text-align:left}
+  .table th{background:var(--brass-tint)}
+  .table tr.k td{background:var(--green-tint)}
+  .lessons{margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:.75rem}
+  .box{border-radius:6px;padding:7px 11px}
+  .box.ai{background:var(--teal-tint)} .box.me{background:var(--brass-tint)}
+  .box h3{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 3px;color:var(--teal-dark)}
+  .box ul{margin:0;padding-left:16px}
+  .foot{margin-top:8px;font-size:.66rem;color:var(--muted);display:flex;justify-content:space-between;gap:10px}
+  .foot a{color:var(--teal)}
+  @media (max-width:720px){.grid,.lessons{grid-template-columns:1fr}.page{padding:20px 16px}.top{flex-direction:column;align-items:flex-start}.top .by{text-align:left}}
+  @page{size:letter;margin:.3in}
+  @media print{html{font-size:13.2px}body{background:#fff}.bar{display:none}.page{margin:0;border:0;padding:0;max-width:none}}
+</style>
+</head>
+<body>
+<div class="bar"><a href="./">&larr; Portfolio home</a><button type="button" onclick="window.print()">Print or save as PDF</button></div>
+<main class="page">
+  <div class="top">
+    <div>
+      <h1>AI Item Review Case Study: From Draft to Defensible Item</h1>
+      <p class="sub">Prompting, auditing, and revising an AI-generated ELA item for large-scale assessment</p>
+    </div>
+    <div class="by">Dr. Mary K Boudreaux, EdD<br>Passage: <a href="ela-item-set.html">The Praline Pot</a>, grade 5</div>
+  </div>
+
+  <div class="ctx"><b>Task.</b> Generate one multiple-choice item for my original grade 5 story <em>The Praline Pot</em> targeting character analysis. <b>Principle.</b> AI speeds up drafting; a content expert owns every key, rationale, alignment claim, and fairness decision.</div>
+
+  <div class="grid">
+    <section>
+      <h2><span class="step">1</span>The prompt I wrote</h2>
+<pre class="prompt">Role: You are an item writer for a state ELA test.
+Passage: [full text of "The Praline Pot," with
+paragraph numbers]
+Task: Write ONE 4-option multiple-choice item for
+grade 5 aligned to CCSS RL.5.3 (describe a
+character using specific details).
+Rules:
+- Ask about Lise at the BEGINNING of the story.
+- The key must be provable from the passage alone.
+- Each distractor must reflect a specific
+  misreading; write a rationale for every option.
+- No negative stems; no "all of the above."
+- Use neutral, respectful language about every
+  character and culture.
+Output: standard, stem, options A-D, key,
+rationales.</pre>
+      <h2 style="margin-top:9px"><span class="step">2</span>The AI's first draft</h2>
+      <div class="item draft">
+        <div class="meta">AI draft &middot; tagged <mark>RL.5.4<sup>1</sup></mark> &middot; key given: <mark>B<sup>2</sup></mark></div>
+        <p><mark>Lise is a typical impatient kid who doesn't listen to her old-fashioned Mon-mon.<sup>3</sup></mark> Which detail shows this?</p>
+        <ol type="A">
+          <li>She turns the flame up high so the pralines will be done before supper.</li>
+          <li>She asks Mon-mon, "How do you know when it is ready?"</li>
+          <li><mark>She refuses to make the pralines for the fair.<sup>4</sup></mark></li>
+          <li><mark>All of the above<sup>4</sup></mark></li>
+        </ol>
+        <p class="why">AI rationale for B: "Asking a question shows she does not know what she is doing."</p>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="step">3</span>My annotated review</h2>
+      <ol class="review">
+        <li><span class="n">1</span><div><b>Standard does not match.</b> RL.5.4 is word and phrase meaning. The item asks students to describe a character, which is RL.5.3, the standard the prompt requested. A mis-tagged item corrupts the blueprint and the score report.</div></li>
+        <li><span class="n">2</span><div><b>Wrong key.</b> Option B is the moment Lise <em>starts</em> listening (paragraph 11), the opposite of the trait in the stem. The text supports A: she turns the flame up high because she wants to finish before supper (paragraph 6) and ignores "Not yet" (paragraphs 7 and 8). The AI's rationale confuses asking for help with not knowing.</div></li>
+        <li><span class="n">3</span><div><b>Bias and a leading stem.</b> "Typical impatient kid" stereotypes children, and "old-fashioned" frames the elder and her cultural knowledge as outdated, when in the story Mon-mon's knowledge is the solution. The stem also hands students the interpretation instead of asking them to make it, and it gives no paragraph reference.</div></li>
+        <li><span class="n">4</span><div><b>Weak distractors and a broken rule.</b> C is contradicted by paragraph 2 (Lise volunteers), so no reader would choose it. D violates the prompt, and because A is true, "All of the above" creates a second arguable answer. Neither distractor tells us anything about a student's misunderstanding.</div></li>
+        <li><span class="n">&#10003;</span><div><b>What I kept.</b> The AI surfaced two useful text details (A and B). Both stay, and B becomes a purposeful distractor: it is true, it is about Lise, but it describes her later in the story.</div></li>
+      </ol>
+    </section>
+  </div>
+
+  <section style="margin-top:10px">
+    <h2><span class="step">4</span>The revised item</h2>
+    <div class="item final">
+      <div class="meta">Final &middot; CCSS RL.5.3 &middot; DOK 2 &middot; Est. difficulty: Medium &middot; Key: B</div>
+      <p>Which detail from paragraphs 6 to 8 best shows that Lise is impatient at the beginning of the story?</p>
+      <table class="table">
+        <thead><tr><th style="width:52%">Option</th><th>Rationale</th></tr></thead>
+        <tbody>
+          <tr><td>A. She measures the sugar and cream into the pot.</td><td>Accurate detail from paragraph 6, but it describes an action, not a trait.</td></tr>
+          <tr class="k"><td>B. She turns the flame up high because she wants the pralines finished before supper.</td><td>Key. Shows she is rushing; reinforced when she ignores "Not yet" in paragraphs 7 and 8.</td></tr>
+          <tr><td>C. She ties on the striped apron that comes down to her knees.</td><td>From paragraph 4; suggests eagerness, not impatience, and is outside the paragraphs named.</td></tr>
+          <tr><td>D. She asks Mon-mon how to tell when the candy is ready.</td><td>The AI's original key. A true detail about Lise, but it shows her change later in the story (paragraph 11).</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="lessons">
+    <div class="box ai"><h3>Where AI helped</h3><ul><li>Produced a first draft and text details in seconds</li><li>Offered options I could repurpose as distractors</li><li>Useful as a second reader: I ask it to argue for each distractor to find weak keys</li></ul></div>
+    <div class="box me"><h3>Where expert judgment was required</h3><ul><li>Verifying the key and every rationale against the text</li><li>Catching the mis-tagged standard</li><li>Bias, tone, and cultural accuracy</li><li>Enforcing item-writing rules the model ignored</li><li>Logging AI use for the item's review record</li></ul></div>
+  </div>
+
+  <div class="foot"><span>&copy; 2026 Dr. Mary K Boudreaux, EdD. The AI draft is illustrative: it reflects the first-pass errors I most often correct in AI-generated items. Rules applied: <a href="item-writing-guide.html">ELA Item Writing Guide</a>.</span><span>See also: <a href="ela-item-set-grade10.html">Grade 10 informational set</a></span></div>
+</main>
+</body>
+</html>

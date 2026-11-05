@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grade 10 ELA Item Set: Going and Coming | Dr. Mary K Boudreaux, EdD</title>
+<meta name="description" content="Original grade 10 informational passage on Kouri-Vini, the Louisiana Creole language, with a standards-aligned item set, item specifications, rationales, and a scoring rubric, by Dr. Mary K Boudreaux, EdD.">
+<style>
+  :root{
+    --teal:#14746F; --teal-dark:#0E5652; --teal-tint:#E6F2F1;
+    --brass:#B0832E; --brass-tint:#F7F0E2;
+    --ink:#1F2A2E; --muted:#5A6A6E; --line:#D9E2E1; --paper:#FFFFFF; --bg:#F6F8F7;
+    --ok:#1E7B4A; --ok-tint:#E5F4EB; --no:#A23B2A; --no-tint:#FBEBE7;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55}
+  a{color:var(--teal)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  header.top{background:var(--teal);color:#fff;padding:36px 0 28px}
+  header.top .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#CFE6E4;margin:0 0 6px}
+  header.top h1{font-family:var(--serif);font-weight:normal;font-size:clamp(1.7rem,3.2vw,2.5rem);margin:0 0 8px}
+  header.top p.lede{max-width:760px;margin:0;color:#E8F3F2}
+  header.top .byline{margin-top:14px;font-size:.92rem;color:#CFE6E4}
+  header.top .byline a{color:#fff}
+  .bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px}
+  .toggle{display:inline-flex;border:1px solid var(--teal);border-radius:999px;overflow:hidden}
+  .toggle button{border:0;background:transparent;color:var(--teal);padding:8px 16px;font:600 .9rem var(--sans);cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:var(--teal);color:#fff}
+  .bar nav a{font-size:.88rem;margin-left:14px;text-decoration:none;font-weight:600}
+  .specs-card{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--brass);border-radius:10px;padding:18px 22px;margin:26px 0}
+  .specs-card h2{margin:0 0 10px;font-size:1.05rem;color:var(--teal-dark)}
+  .specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 24px;font-size:.92rem}
+  .specs-grid div b{display:block;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start;margin-bottom:40px}
+  @media (max-width:900px){.layout{grid-template-columns:1fr}}
+  .passage{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:26px 28px;position:sticky;top:66px;max-height:calc(100vh - 86px);overflow:auto}
+  @media (max-width:900px){.passage{position:static;max-height:none}}
+  .passage h2{font-family:var(--serif);font-weight:normal;font-size:1.6rem;margin:0 0 2px;color:var(--teal-dark)}
+  .passage .src{color:var(--muted);font-size:.85rem;margin:0 0 16px}
+  .passage .dir{background:var(--teal-tint);border-radius:8px;padding:10px 14px;font-size:.9rem;margin-bottom:18px}
+  .passage ol{list-style:none;counter-reset:para;margin:0;padding:0}
+  .passage li{counter-increment:para;position:relative;padding-left:38px;margin:0 0 14px;font-family:var(--serif);font-size:1.06rem;line-height:1.7}
+  .passage li::before{content:counter(para);position:absolute;left:0;top:2px;width:26px;text-align:right;font:600 .78rem var(--sans);color:var(--brass)}
+  .gloss{margin-top:22px;border-top:2px solid var(--brass);padding-top:12px}
+  .gloss h3{margin:0 0 8px;font-size:.95rem;color:var(--teal-dark)}
+  .gloss table{width:100%;border-collapse:collapse;font-size:.9rem}
+  .gloss th,.gloss td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  .gloss th{background:var(--brass-tint)}
+  .gloss td:first-child{font-style:italic;font-weight:600}
+  .gloss td:nth-child(-n+2){white-space:nowrap}
+  .items{display:flex;flex-direction:column;gap:22px}
+  .item{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+  .item-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .item-head h3{margin:0;font-size:1rem;color:var(--teal-dark)}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}
+  .tag{font-size:.74rem;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--teal-tint);color:var(--teal-dark);white-space:nowrap}
+  .tag.brass{background:var(--brass-tint);color:#7A5A1C}
+  .tag.diff-Easy{background:#E5F4EB;color:#1E5E3B}
+  .tag.diff-Medium{background:#FFF4D6;color:#7A5A00}
+  .tag.diff-Hard{background:#FBEBE7;color:#8A2F21}
+  .stem{font-size:1rem;margin:0 0 12px}
+  .stem .part{font-weight:700;color:var(--brass)}
+  fieldset{border:0;margin:0 0 14px;padding:0}
+  legend{padding:0;margin-bottom:8px;font-weight:600}
+  .opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s,background .15s}
+  .opt:hover{border-color:var(--teal)}
+  .opt input{margin-top:4px;accent-color:var(--teal)}
+  .opt .letter{font-weight:700;color:var(--teal);min-width:1.1em}
+  .opt.correct{border-color:var(--ok);background:var(--ok-tint)}
+  .opt.incorrect{border-color:var(--no);background:var(--no-tint)}
+  .btn{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:9px 16px;font:600 .9rem var(--sans);cursor:pointer}
+  .btn:hover{background:var(--teal-dark)}
+  .btn.ghost{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+  .btn:focus-visible,.toggle button:focus-visible,.opt:focus-within,.dd-item:focus-visible,.hot:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+  .feedback{margin-top:10px;font-size:.92rem;font-weight:600;min-height:1.2em}
+  .feedback.ok{color:var(--ok)} .feedback.no{color:var(--no)}
+  .spec{display:none;margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;font-size:.92rem}
+  body.show-specs .spec{display:block}
+  .spec h4{margin:0 0 6px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--brass)}
+  .spec table{width:100%;border-collapse:collapse;margin:6px 0 10px}
+  .spec td,.spec th{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left}
+  .spec th{background:var(--brass-tint);font-weight:600}
+  .spec .key-row td{background:var(--ok-tint)}
+  .dd-list{list-style:none;margin:0 0 12px;padding:0}
+  .dd-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;background:#fff;cursor:grab}
+  .dd-item.dragging{opacity:.5}
+  .dd-item .num{font:700 .85rem var(--sans);color:#fff;background:var(--teal);border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 24px}
+  .dd-item .txt{flex:1}
+  .dd-item .mv{display:flex;gap:4px}
+  .dd-item .mv button{border:1px solid var(--line);background:#fff;border-radius:6px;width:30px;height:28px;cursor:pointer;color:var(--teal);font-weight:700}
+  .dd-item.correct{border-color:var(--ok);background:var(--ok-tint)}
+  .dd-item.incorrect{border-color:var(--no);background:var(--no-tint)}
+  .hot-wrap{font-family:var(--serif);font-size:1.04rem;line-height:1.9;background:#FBFCFC;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:12px}
+  .hot-wrap .pn{font:600 .75rem var(--sans);color:var(--brass);margin-right:6px}
+  .hot{cursor:pointer;border-radius:4px;padding:1px 2px;border-bottom:2px dotted var(--teal)}
+  .hot:hover{background:var(--teal-tint)}
+  .hot[aria-pressed="true"]{background:#FFE9A8;border-bottom-color:var(--brass)}
+  .hot.correct{background:var(--ok-tint);border-bottom-color:var(--ok)}
+  .hot.incorrect{background:var(--no-tint);border-bottom-color:var(--no)}
+  textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:8px;padding:12px;font:1rem var(--serif);line-height:1.6;resize:vertical}
+  .wc{font-size:.82rem;color:var(--muted);margin:4px 0 10px}
+  .rubric th:first-child,.rubric td:first-child{width:70px;text-align:center;font-weight:700}
+  .sample{background:#FBFCFC;border-left:3px solid var(--teal);padding:8px 12px;margin:6px 0;font-family:var(--serif)}
+  .notes{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 26px;margin:0 0 40px}
+  .notes h2{margin:0 0 10px;font-size:1.15rem;color:var(--teal-dark)}
+  .notes ul{margin:0;padding-left:20px} .notes li{margin-bottom:6px}
+  .score-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 20px;margin-bottom:26px}
+  .score-bar output{font-weight:700;color:var(--teal-dark)}
+  footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:.86rem}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  @media print{.bar,.btn,.score-bar{display:none} .spec{display:block} .passage{position:static;max-height:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <p class="eyebrow">ELA Assessment Development Sample</p>
+    <h1>Grade 10 Informational Item Set: <em>Going and Coming</em></h1>
+    <p class="lede">An original informational article on the decline and revival of Kouri-Vini, the Louisiana Creole language, paired with seven standards-aligned items: selected response, an evidence-based two-part item, two technology-enhanced items, and an extended constructed response with a scoring rubric. Switch to <strong>Item Specifications</strong> to see keys, distractor rationales, metadata, and scoring guidance.</p>
+    <p class="byline">Passage and items written by Dr. Mary K Boudreaux, EdD &middot; <a href="./">Portfolio home</a> &middot; <a href="ela-item-set.html">Grade 5 literary set</a></p>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="toggle" role="group" aria-label="View mode">
+      <button type="button" id="viewStudent" aria-pressed="true">Student View</button>
+      <button type="button" id="viewSpecs" aria-pressed="false">Item Specifications</button>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="#passage">Passage</a><a href="#items">Items</a><a href="#notes">Development Notes</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section class="specs-card" aria-labelledby="pspec">
+    <h2 id="pspec">Passage Specifications</h2>
+    <div class="specs-grid">
+      <div><b>Grade</b>10</div>
+      <div><b>Genre</b>Informational article (history and language)</div>
+      <div><b>Length</b>701 words, 11 numbered paragraphs</div>
+      <div><b>Quantitative measure</b>Lexile-equivalent estimate 1230L (likely range 1130L to 1330L), Grades 9 to 10 band, from the author’s <a href="lexile-analyzer.html">Readability Analyzer</a></div>
+      <div><b>Qualitative complexity</b>Complex: cause-and-effect structure across a century, an evaluative author stance, a framing device that returns in the conclusion</div>
+      <div><b>Setting and culture</b>Louisiana Creole communities along Bayou Teche, False River, and the Cane River; terms glossed below the passage</div>
+      <div><b>Standards family</b>CCSS ELA RI.9-10.1 to RI.9-10.8, L.9-10.4a, W.9-10.9b (adaptable to state standards)</div>
+      <div><b>Set total</b>7 items, 10 points (7 machine-scored, 3 hand-scored)</div>
+    </div>
+  </section>
+
+  <div class="score-bar" aria-live="polite">
+    <span>Machine-scored items checked: <output id="checked">0</output> of 6</span>
+    <span>Points earned: <output id="earned">0</output> of 7</span>
+    <button type="button" class="btn ghost" id="resetAll">Reset all</button>
+  </div>
+
+  <div class="layout">
+    <article class="passage" id="passage" aria-labelledby="ptitle">
+      <h2 id="ptitle">Going and Coming: The Work to Keep Kouri-Vini Alive</h2>
+      <p class="src">An original article by Mary K Boudreaux</p>
+      <p class="dir"><strong>Directions:</strong> Read the article. Then answer the questions that follow.</p>
+      <ol id="passageText"></ol>
+      <aside class="gloss" aria-label="Words to know">
+        <h3>Words to Know</h3>
+        <table><thead><tr><th>Term</th><th>Say it</th><th>Meaning</th></tr></thead><tbody>
+          <tr><td>Kouri-Vini</td><td>KOO-ree VEE-nee</td><td>The Louisiana Creole language</td></tr>
+          <tr><td>kouri, vini</td><td>KOO-ree, VEE-nee</td><td>To go, to come</td></tr>
+          <tr><td>Bayou Teche</td><td>BY-yoo TESH</td><td>Historic waterway of south central Louisiana</td></tr>
+        </tbody></table>
+      </aside>
+    </article>
+
+    <section class="items" id="items" aria-label="Items"></section>
+  </div>
+
+  <section class="notes" id="notes" aria-labelledby="ntitle">
+    <h2 id="ntitle">Development Notes</h2>
+    <ul>
+      <li><strong>Blueprint coverage.</strong> Key ideas and details (Items 2, 4, 5), craft and structure (Items 1, 3, 6), and integration of knowledge and ideas (Item 7). Depth of Knowledge ranges from Level 1 to Level 3, with three items at Level 3.</li>
+      <li><strong>Why an informational text.</strong> This set pairs with the grade 5 literary set to show range across grade bands and genres: here, students track a cause-and-effect argument across a century and evaluate how well an author supports a claim.</li>
+      <li><strong>Accuracy.</strong> Historical claims are limited to well-documented points (the 1921 English-only provision for public schools, the 1998 dictionary of Louisiana Creole, the language’s endangered status), and the article signals where scholars disagree or where numbers are uncertain. In production, every fact would go through a source-verification check.</li>
+      <li><strong>Bias and sensitivity review.</strong> The origins of the language in slavery are stated plainly and without graphic detail. The article distinguishes Louisiana Creole from Cajun French and from standard French, presents disagreements among speakers neutrally, and centers elders and community members as experts. No item depends on prior knowledge of Louisiana.</li>
+      <li><strong>Distractor design.</strong> Each distractor reflects a specific misreading: an overstated detail, a reversal of the author’s stance, a true detail that does not answer the question, or an unsupported prediction.</li>
+      <li><strong>AI-assisted workflow.</strong> See the <a href="ai-item-review.html">AI item-review case study</a> for how AI drafts are prompted, audited, and revised before any item enters a set.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Dr. Mary K Boudreaux, EdD. Original passage and items; not affiliated with any testing program. Aligned to the Common Core State Standards for English Language Arts for illustration.</div>
+</footer>
+
+<script>
+const PASSAGE = [
+"In parts of south Louisiana, some grandparents still greet one another in a language that most of their grandchildren cannot understand. It is not standard French, although it may sound like French to an outsider, and it is not Cajun French either. It is Louisiana Creole, a language that many of its speakers and learners now call Kouri-Vini.",
+"The name comes from two everyday verbs, kouri (\"to go\") and vini (\"to come\"), which are among the features that set the language apart from French. The name suits a language whose history has been one of going and coming.",
+"Louisiana Creole took shape in the 1700s, after French colonists brought enslaved Africans to the Louisiana colony. People who spoke many different languages needed a common way to communicate, and over generations a new language grew, drawing most of its vocabulary from French while developing a grammar of its own. Linguists still debate exactly how the language formed, but most agree that it was created largely by enslaved Africans and their descendants. In time, it was spoken by people of many backgrounds along waterways such as Bayou Teche, False River, and the Cane River.",
+"For most of its history, Kouri-Vini was a spoken language rather than a written one, and that made it vulnerable. In 1921, Louisiana adopted a state constitution requiring that public schools teach in English. Many children who arrived at school speaking Creole or French were punished for using the language of their homes. Some of those children grew up determined to spare their own children the same shame, so they spoke only English to them. A language can survive almost anything except a generation of parents who stop passing it on.",
+"By the end of the twentieth century, most fluent speakers were older adults. Estimates vary because no census has carefully counted the language, but researchers generally agree that the number of fluent speakers is small and falling. Linguists classify Louisiana Creole as an endangered language.",
+"The story might have ended there. Instead, in the 2010s, a new generation began to return to the language. Some were the grandchildren of speakers who wanted to understand the stories they had half heard at family gatherings. Others had no family connection to the language but were drawn to its history. Because many of these learners lived far from one another, they met online, in social media groups and video calls, where they could practice with one another and with elders.",
+"These learners faced a practical problem: a language that is rarely written is difficult to teach. Building on the work of linguists, who had published a dictionary of Louisiana Creole in 1998, teachers and learners worked to agree on a consistent way to spell the language. A shared spelling system allowed them to create lessons, word lists, and stories for children. Each new text made the next learner's work a little easier.",
+"Not everyone agrees on every choice. Some speakers prefer the older name Creole, and others simply say that they speak French. Pronunciation and vocabulary differ from one community to the next, so teachers must decide which forms to teach. Such debates are common in language revitalization, the work of bringing an endangered language back into daily use, and they are a sign that a language has people who care about it.",
+"Revitalization also depends on the people who learned the language as children. Their pronunciation, expressions, and stories cannot be found in any dictionary. When an elder records a story or explains an old word to a learner, that elder preserves knowledge that might otherwise disappear. Many learners describe these conversations as the most important part of their study.",
+"Will Kouri-Vini survive? Success for an endangered language is not measured only by the number of its speakers. It is also measured by whether people use the language for real purposes: to greet a neighbor, to sing, to comfort a child. By that measure, a language that nearly fell silent in the last century has begun, slowly, to come back.",
+"Kouri-Vini's name, after all, describes motion in both directions. For much of the twentieth century, the language was going. Now, in kitchens, classrooms, and online meetings, it is also coming."
+];
+
+const ITEMS = [
+ { id:"G10-INF-KV-01", type:"mc", typeLabel:"Multiple Choice", std:"L.9-10.4a / RI.9-10.4", stdText:"Use context as a clue to the meaning of a word or phrase.", dok:1, diff:"Easy", pts:1,
+   stem:"Read this sentence from paragraph 4.<br><em>For most of its history, Kouri-Vini was a spoken language rather than a written one, and that made it vulnerable.</em><br>What does <strong>vulnerable</strong> mean as it is used in the article?",
+   opts:["difficult for adults to learn","easily harmed or lost","kept secret from outsiders","spoken only in rural areas"], key:1,
+   why:["Plausible because the article discusses learners, but paragraph 4 is about the language being lost, not about how hard it is to learn.","Correct. The rest of paragraph 4 explains how the language began to disappear once it was not passed on.","Nothing in the article says the language was hidden; it was spoken openly in homes, fields, and churches.","Draws on the mention of bayous and rivers in paragraph 3, but location does not explain the word."] },
+
+ { id:"G10-INF-KV-02", type:"mc", typeLabel:"Multiple Choice", std:"RI.9-10.2", stdText:"Determine a central idea of a text and analyze its development.", dok:2, diff:"Medium", pts:1,
+   stem:"Which statement best expresses the central idea of the article?",
+   opts:["Louisiana’s 1921 constitution was the only reason Kouri-Vini lost speakers.","Kouri-Vini is a regional form of French that is spoken mainly by older adults.","Kouri-Vini declined when it stopped being passed down, but learners and elders are now working to bring it back.","Online learning has guaranteed that Kouri-Vini will survive for future generations."], key:2,
+   why:["Overstates one detail; paragraph 4 also describes families choosing to speak only English.","Contradicted by paragraphs 1 and 2, which explain that Kouri-Vini is a distinct language, not a form of French.","Correct. The article traces the decline (paragraphs 4 and 5) and the revival (paragraphs 6 to 11).","Overgeneralization; paragraph 10 opens with the question “Will Kouri-Vini survive?” and says the language has begun to come back “slowly.”"] },
+
+ { id:"G10-INF-KV-03", type:"ebsr", typeLabel:"Evidence-Based Selected Response (Two-Part)", std:"RI.9-10.6 / RI.9-10.1", stdText:"Determine an author’s point of view; cite strong and thorough textual evidence.", dok:3, diff:"Hard", pts:2,
+   parts:[
+    { label:"Part A", stem:"What is the author’s point of view about disagreements among Kouri-Vini speakers and learners (paragraph 8)?",
+      opts:["The disagreements threaten to stop the revitalization effort.","The disagreements show that people are invested in the language.","The older name Creole should replace the name Kouri-Vini.","Teachers should choose one community’s pronunciation for all learners."], key:1,
+      why:["Tempting because the paragraph opens with conflict, but the author never says the debates endanger the effort.","Correct. The author frames the debates as normal and as evidence that people care.","Reports one group’s preference; the author does not take a side on the name.","Describes a decision teachers face, not a recommendation the author makes."] },
+    { label:"Part B", stem:"Which sentence from the article best supports the answer to Part A?",
+      opts:["“Some speakers prefer the older name Creole, and others simply say that they speak French.” (paragraph 8)","“Pronunciation and vocabulary differ from one community to the next, so teachers must decide which forms to teach.” (paragraph 8)","“Such debates are common in language revitalization ... and they are a sign that a language has people who care about it.” (paragraph 8)","“Each new text made the next learner’s work a little easier.” (paragraph 7)"], key:2,
+      why:["Describes the disagreement itself, not the author’s view of it.","Explains a cause of disagreement, not how the author judges it.","Correct. This is the sentence in which the author evaluates the debates.","Accurate detail from another paragraph that does not address disagreement."] } ],
+   scoring:"2 points: both parts correct. 1 point: Part A correct and Part B incorrect. 0 points: Part A incorrect.",
+   hint1:"Part A is correct; look for the sentence where the author judges the debates.", hint0:"Reread the last sentence of paragraph 8: how does the author describe the debates?" },
+
+ { id:"G10-INF-KV-04", type:"order", typeLabel:"Technology-Enhanced: Drag and Drop (Sequencing)", std:"RI.9-10.3", stdText:"Analyze how the author unfolds a series of ideas or events and the connections between them.", dok:2, diff:"Medium", pts:1,
+   stem:"Put these developments in the order in which they happened. Drag each one, or use the arrow buttons, so that the earliest is at the top.",
+   events:["Louisiana Creole takes shape in the colony.","The state constitution requires that public schools teach in English.","Many parents choose to speak only English to their children.","Linguists publish a dictionary of Louisiana Creole.","Learners meet online and work toward a shared spelling system."],
+   start:[3,0,4,2,1],
+   scoring:"1 point: all five developments in the correct order. 0 points: any other order. The sequence captures the cause-and-effect chain the article builds from origin to decline to revival.",
+   hintNo:"Not quite. Use the dates and signal words in paragraphs 3 through 7 to check your order." },
+
+ { id:"G10-INF-KV-05", type:"hot", typeLabel:"Technology-Enhanced: Hot Text", std:"RI.9-10.1 / RI.9-10.3", stdText:"Cite textual evidence that supports an analysis of what the text says.", dok:2, diff:"Medium", pts:1,
+   stem:"The author suggests that the decline of Kouri-Vini happened in families as well as in schools. Select the <strong>two</strong> sentences in paragraph 4 that best support this idea.",
+   para:4,
+   sents:["For most of its history, Kouri-Vini was a spoken language rather than a written one, and that made it vulnerable.","In 1921, Louisiana adopted a state constitution requiring that public schools teach in English.","Many children who arrived at school speaking Creole or French were punished for using the language of their homes.","Some of those children grew up determined to spare their own children the same shame, so they spoke only English to them.","A language can survive almost anything except a generation of parents who stop passing it on."],
+   keys:[3,4],
+   why:["Explains why the language was at risk, but does not mention families or schools.","Describes a school policy, not a family decision.","Describes what happened in schools, not at home.","Correct. Parents themselves stopped passing the language to their children.","Correct. The author states the general principle: the break happens between parents and children."],
+   scoring:"1 point: both correct sentences selected and no others. 0 points: any other response.",
+   okMsg:"Correct. Both sentences locate the break in what parents passed on at home.", noMsg:"Not quite. Look for the sentences about parents and children rather than schools." },
+
+ { id:"G10-INF-KV-06", type:"mc", typeLabel:"Multiple Choice", std:"RI.9-10.5", stdText:"Analyze how an author’s ideas are developed and refined by particular sentences, paragraphs, or larger portions of a text.", dok:3, diff:"Hard", pts:1,
+   stem:"Why does the author return to the meaning of the name Kouri-Vini in the final paragraph?",
+   opts:["to teach readers how the verbs kouri and vini change form","to connect the name’s meaning to the language’s decline and recovery","to argue that every speaker should use the name Kouri-Vini","to predict that the language will soon have as many speakers as French"], key:1,
+   why:["The article defines the verbs but never explains grammar or verb forms.","Correct. “Going” and “coming” echo paragraph 2 and frame the decline and the revival, giving the article a unifying structure.","Contradicted by paragraph 8, where the author reports different preferences without taking a side.","Unsupported; the author says the language is coming back “slowly” and makes no prediction about numbers."] },
+
+ { id:"G10-INF-KV-07", type:"cr", typeLabel:"Constructed Response (Extended)", std:"RI.9-10.8 / W.9-10.9b", stdText:"Delineate and evaluate the argument and specific claims in a text; draw evidence from informational texts.", dok:3, diff:"Hard", pts:3,
+   stem:"In paragraph 10, the author claims that success for an endangered language “is not measured only by the number of its speakers.” Explain how the author supports this claim, and evaluate whether the support is convincing. Use <strong>two</strong> pieces of evidence from the article.",
+   rubric:[
+     ["3","States a clear evaluation of the claim and explains how the author supports it, using two relevant and accurate pieces of evidence with explanation that connects each to the claim. May note a limitation (for example, that the article offers few numbers)."],
+     ["2","States an evaluation and uses two relevant pieces of evidence, but the explanation of how they support the claim is general or uneven; OR gives one well-explained piece of evidence."],
+     ["1","Restates the claim or gives an opinion with minimal or loosely related evidence and little explanation."],
+     ["0","Response is incorrect, irrelevant, copied without explanation, or blank."] ],
+   accept:["Support: everyday uses named in paragraph 10 (greeting a neighbor, singing, comforting a child).","Support: learners using the language online and in classrooms (paragraphs 6 and 11); new lessons and stories (paragraph 7).","Support: elders’ knowledge that “cannot be found in any dictionary” (paragraph 9).","Evaluation may be positive (examples show real use) or critical (no data on how many people use it daily; speaker numbers are still “small and falling” in paragraph 5). Either position earns credit if supported."],
+   samples:[
+     ["3","The author supports the claim by showing the language being used for real purposes. Learners practice with elders online (paragraph 6) and teachers have created lessons and children’s stories (paragraph 7), so the language is being taught and used, not just counted. This is mostly convincing because these are concrete examples, but the author admits in paragraph 5 that speakers are “small and falling,” and gives no numbers on how many people use it daily, so the claim is hopeful more than proven.","Clear evaluation, two explained pieces of evidence, and a thoughtful limitation."],
+     ["2","I think the author is convincing. People meet online to practice and elders tell stories. These show the language is still used.","Two relevant details and an evaluation, but the explanation of how they support the claim is thin."],
+     ["1","The author says success is not just about numbers. I agree because languages are important.","Restates the claim and gives an opinion without text evidence."] ] }
+];
+
+/* ---------- render passage ---------- */
+const pt = document.getElementById('passageText');
+PASSAGE.forEach(p => { const li=document.createElement('li'); li.textContent=p; pt.appendChild(li); });
+
+/* ---------- state ---------- */
+const results = {}; // id -> points earned for machine-scored items
+function updateScore(){
+  const ids = Object.keys(results);
+  document.getElementById('checked').textContent = ids.length;
+  document.getElementById('earned').textContent = ids.reduce((a,k)=>a+results[k],0);
+}
+const L = i => String.fromCharCode(65+i);
+
+function tagsHTML(it){
+  return `<div class="tags">
+    <span class="tag">${it.id}</span>
+    <span class="tag brass">${it.typeLabel}</span>
+    <span class="tag">CCSS ${it.std}</span>
+    <span class="tag">DOK ${it.dok}</span>
+    <span class="tag diff-${it.diff}">Difficulty: ${it.diff}</span>
+    <span class="tag">${it.pts} pt${it.pts>1?'s':''}</span>
+  </div>`;
+}
+function metaTable(it, keyText){
+  return `<table><tbody>
+    <tr><th>Standard</th><td>${it.std}: ${it.stdText}</td></tr>
+    <tr><th>Depth of Knowledge</th><td>Level ${it.dok}</td></tr>
+    <tr><th>Est. difficulty</th><td>${it.diff} (pre-field-test estimate)</td></tr>
+    ${keyText?`<tr class="key-row"><th>Key</th><td>${keyText}</td></tr>`:''}
+  </tbody></table>`;
+}
+function rationaleTable(opts, why, keys){
+  return `<table><thead><tr><th style="width:44px">Opt.</th><th>Rationale</th></tr></thead><tbody>
+    ${opts.map((o,i)=>`<tr class="${keys.includes(i)?'key-row':''}"><td><b>${L(i)}</b></td><td>${why[i]}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+function mcFieldset(name, legendHTML, opts){
+  return `<fieldset><legend class="stem">${legendHTML}</legend>
+    ${opts.map((o,i)=>`<label class="opt" data-i="${i}"><input type="radio" name="${name}" value="${i}"><span class="letter">${L(i)}</span><span>${o}</span></label>`).join('')}
+  </fieldset>`;
+}
+
+const host = document.getElementById('items');
+ITEMS.forEach((it, n) => {
+  const sec = document.createElement('article');
+  sec.className='item'; sec.id=it.id;
+  let body='', spec='';
+  if(it.type==='mc'){
+    body = mcFieldset(it.id, it.stem, it.opts) + `<button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, L(it.key))}<h4>Option rationales</h4>${rationaleTable(it.opts,it.why,[it.key])}`;
+  }
+  if(it.type==='ebsr'){
+    body = it.parts.map((p,pi)=>mcFieldset(`${it.id}-${pi}`, `<span class="part">${p.label}.</span> ${p.stem}`, p.opts)).join('') +
+      `<button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, `Part A: ${L(it.parts[0].key)}; Part B: ${L(it.parts[1].key)}`)}` +
+      it.parts.map(p=>`<h4>${p.label} rationales</h4>${rationaleTable(p.opts,p.why,[p.key])}`).join('') +
+      `<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='order'){
+    body = `<p class="stem">${it.stem}</p><ul class="dd-list" aria-label="Events to order">
+      ${it.start.map(ix=>`<li class="dd-item" draggable="true" tabindex="0" data-ix="${ix}"><span class="num"></span><span class="txt">${it.events[ix]}</span><span class="mv"><button type="button" aria-label="Move up" data-up>&uarr;</button><button type="button" aria-label="Move down" data-down>&darr;</button></span></li>`).join('')}
+      </ul><button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, it.events.map((e,i)=>`${i+1}. ${e}`).join('<br>'))}<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='hot'){
+    body = `<p class="stem">${it.stem}</p><div class="hot-wrap"><span class="pn">${it.para}</span>${it.sents.map((s,i)=>`<span class="hot" role="button" tabindex="0" aria-pressed="false" data-i="${i}">${s}</span>`).join(' ')}</div>
+      <button type="button" class="btn" data-check>Check answer</button><div class="feedback" aria-live="polite"></div>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it, it.keys.map(k=>`Sentence ${k+1}`).join(' and '))}<h4>Selectable text rationales</h4>${rationaleTable(it.sents,it.why,it.keys)}<h4>Scoring</h4><p>${it.scoring}</p>`;
+  }
+  if(it.type==='cr'){
+    body = `<p class="stem">${it.stem}</p><label class="sr-only" for="${it.id}-ta">Your response</label><textarea id="${it.id}-ta" placeholder="Type your response here."></textarea><div class="wc" aria-live="polite">0 words</div>
+      <p style="font-size:.88rem;color:var(--muted);margin:0">This item is hand-scored. Switch to Item Specifications to see the rubric and sample responses.</p>`;
+    spec = `<h4>Item specifications</h4>${metaTable(it,'')}
+      <h4>Scoring rubric</h4><table class="rubric"><thead><tr><th>Score</th><th>Description</th></tr></thead><tbody>${it.rubric.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</tbody></table>
+      <h4>Acceptable responses may include</h4><ul>${it.accept.map(a=>`<li>${a}</li>`).join('')}</ul>
+      <h4>Anchor responses</h4>${it.samples.map(s=>`<p><b>Score ${s[0]}</b></p><div class="sample">${s[1]}</div><p style="margin:4px 0 12px"><em>Annotation:</em> ${s[2]}</p>`).join('')}`;
+  }
+  sec.innerHTML = `<div class="item-head"><h3>Item ${n+1}</h3></div>${tagsHTML(it)}${body}<div class="spec">${spec}</div>`;
+  host.appendChild(sec);
+  wire(sec, it);
+});
+
+function setFb(sec, ok, msg){
+  const fb = sec.querySelector('.feedback'); fb.className='feedback '+(ok?'ok':'no'); fb.textContent=msg;
+}
+function markOpts(fs, chosen, key){
+  fs.querySelectorAll('.opt').forEach(o=>{
+    o.classList.remove('correct','incorrect');
+    const i=+o.dataset.i;
+    if(i===key) o.classList.add('correct'); else if(i===chosen) o.classList.add('incorrect');
+  });
+}
+
+function wire(sec, it){
+  const btn = sec.querySelector('[data-check]');
+  if(it.type==='mc'){
+    btn.addEventListener('click',()=>{
+      const c = sec.querySelector('input:checked');
+      if(!c){ setFb(sec,false,'Select an answer first.'); return; }
+      const v=+c.value; markOpts(sec.querySelector('fieldset'),v,it.key);
+      results[it.id] = v===it.key?1:0; updateScore();
+      setFb(sec, v===it.key, v===it.key?`Correct. ${it.why[v]}`:`Not quite. ${it.why[v]}`);
+    });
+  }
+  if(it.type==='ebsr'){
+    btn.addEventListener('click',()=>{
+      const fss = sec.querySelectorAll('fieldset');
+      const a = sec.querySelector(`input[name="${it.id}-0"]:checked`), b = sec.querySelector(`input[name="${it.id}-1"]:checked`);
+      if(!a||!b){ setFb(sec,false,'Answer both Part A and Part B.'); return; }
+      const va=+a.value, vb=+b.value;
+      markOpts(fss[0],va,it.parts[0].key); markOpts(fss[1],vb,it.parts[1].key);
+      const pts = va===it.parts[0].key ? (vb===it.parts[1].key?2:1) : 0;
+      results[it.id]=pts; updateScore();
+      setFb(sec, pts===2, `${pts} of 2 points. ${pts===2?'Both parts are correct.':pts===1?it.hint1:it.hint0}`);
+    });
+  }
+  if(it.type==='order'){
+    const list = sec.querySelector('.dd-list');
+    const renum = ()=>list.querySelectorAll('.dd-item').forEach((li,i)=>li.querySelector('.num').textContent=i+1);
+    renum();
+    let dragEl=null;
+    list.addEventListener('dragstart',e=>{ dragEl=e.target.closest('.dd-item'); dragEl.classList.add('dragging'); e.dataTransfer.effectAllowed='move'; });
+    list.addEventListener('dragend',()=>{ if(dragEl) dragEl.classList.remove('dragging'); dragEl=null; renum(); });
+    list.addEventListener('dragover',e=>{
+      e.preventDefault(); if(!dragEl) return;
+      const after=[...list.querySelectorAll('.dd-item:not(.dragging)')].find(el=>e.clientY < el.getBoundingClientRect().top + el.offsetHeight/2);
+      after ? list.insertBefore(dragEl,after) : list.appendChild(dragEl);
+    });
+    list.addEventListener('click',e=>{
+      const li=e.target.closest('.dd-item'); if(!li) return;
+      if(e.target.closest('[data-up]') && li.previousElementSibling){ list.insertBefore(li, li.previousElementSibling); li.querySelector('[data-up]').focus(); }
+      if(e.target.closest('[data-down]') && li.nextElementSibling){ list.insertBefore(li.nextElementSibling, li); li.querySelector('[data-down]').focus(); }
+      renum(); list.querySelectorAll('.dd-item').forEach(x=>x.classList.remove('correct','incorrect'));
+    });
+    btn.addEventListener('click',()=>{
+      const lis=[...list.querySelectorAll('.dd-item')]; let all=true;
+      lis.forEach((li,i)=>{ const ok=+li.dataset.ix===i; li.classList.toggle('correct',ok); li.classList.toggle('incorrect',!ok); if(!ok) all=false; });
+      results[it.id]=all?1:0; updateScore();
+      setFb(sec, all, all?'Correct. The developments are in order.':it.hintNo);
+    });
+  }
+  if(it.type==='hot'){
+    const spans=[...sec.querySelectorAll('.hot')];
+    const toggle=s=>{ s.setAttribute('aria-pressed', s.getAttribute('aria-pressed')==='true'?'false':'true'); spans.forEach(x=>x.classList.remove('correct','incorrect')); };
+    spans.forEach(s=>{
+      s.addEventListener('click',()=>toggle(s));
+      s.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(s);} });
+    });
+    btn.addEventListener('click',()=>{
+      const sel=spans.filter(s=>s.getAttribute('aria-pressed')==='true').map(s=>+s.dataset.i);
+      if(!sel.length){ setFb(sec,false,'Select two sentences first.'); return; }
+      spans.forEach(s=>{ const i=+s.dataset.i, on=sel.includes(i); s.classList.remove('correct','incorrect');
+        if(on) s.classList.add(it.keys.includes(i)?'correct':'incorrect'); });
+      const ok = sel.length===2 && it.keys.every(k=>sel.includes(k));
+      results[it.id]=ok?1:0; updateScore();
+      setFb(sec, ok, ok?it.okMsg:it.noMsg);
+    });
+  }
+  if(it.type==='cr'){
+    const ta=sec.querySelector('textarea'), wc=sec.querySelector('.wc');
+    ta.addEventListener('input',()=>{ const n=(ta.value.trim().match(/\S+/g)||[]).length; wc.textContent=`${n} word${n===1?'':'s'}`; });
+  }
+}
+
+/* ---------- view toggle ---------- */
+const bS=document.getElementById('viewStudent'), bP=document.getElementById('viewSpecs');
+function setView(specs){ document.body.classList.toggle('show-specs',specs); bS.setAttribute('aria-pressed',!specs); bP.setAttribute('aria-pressed',specs); }
+bS.addEventListener('click',()=>setView(false)); bP.addEventListener('click',()=>setView(true));
+if(location.hash==='#specs') setView(true);
+
+document.getElementById('resetAll').addEventListener('click',()=>{
+  document.querySelectorAll('input[type=radio]').forEach(r=>r.checked=false);
+  document.querySelectorAll('.opt,.dd-item,.hot').forEach(x=>x.classList.remove('correct','incorrect'));
+  document.querySelectorAll('.hot').forEach(x=>x.setAttribute('aria-pressed','false'));
+  document.querySelectorAll('.feedback').forEach(f=>{f.textContent='';f.className='feedback';});
+  document.querySelectorAll('textarea').forEach(t=>{t.value='';t.dispatchEvent(new Event('input'));});
+  for(const k in results) delete results[k]; updateScore();
+});
+</script>
+</body>
+</html>
